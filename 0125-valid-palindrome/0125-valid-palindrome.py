@@ -1,7 +1,4 @@
 class Solution:
-    from string import ascii_uppercase, digits
-    alphanumeric = ascii_uppercase + digits
-
     def isPalindrome(self, s: str) -> bool:
         s = s.upper() 
         s = ''.join(c for c in s if c.isalnum())
