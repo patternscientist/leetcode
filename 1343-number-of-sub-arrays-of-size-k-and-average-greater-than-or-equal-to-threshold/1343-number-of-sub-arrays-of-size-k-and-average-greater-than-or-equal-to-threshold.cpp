@@ -12,12 +12,12 @@ public:
         // windowSum = sum_{t=i}^{i+k-1} arr[t]
         // counter   = number of windows with avg >= threshold among starts 0..i-1
         for (int i=0; i<=n-k; ++i){
-            if (windowSum / k >= threshold)
+            if (windowSum / k >= threshold) 
                 ++counter;
-                
-            if (i != n-k)
+            if (i != n-k) 
                 windowSum = windowSum - arr[i] + arr[i+k];
         }
+        
         return counter;
     }
 };
