@@ -5,15 +5,13 @@ public:
         // two pointers
         int i = 0, j = n - 1;
 
-        // invariant: all character strictly outside of [i, j] have been matched and checked;
-        // i.e., s[0..i-1] mirrors s[j+1..n-1]
+        // invariant: all (alphanumeric) characters strictly outside of [i, j] have been matched and checked
         while (i < j){
             // skip over any non-alphanumeric characters
-            while (i < n-1  && !isalnum(s[i])) ++i;
-            while (j > 0    && !isalnum(s[j])) --j;
+            while (i < j && !isalnum(s[i])) ++i;
+            while (i < j && !isalnum(s[j])) --j;
 
-            // check if the skipping put i ahead of j, and be case-insensitive
-            if (i > j || toupper(s[i]) != toupper(s[j])) 
+            if (toupper(s[i]) != toupper(s[j])) // be case-insensitive
                 return false; 
             
             ++i;
