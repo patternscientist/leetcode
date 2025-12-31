@@ -9,8 +9,8 @@ class Solution:
         i = 0
         j = n-1
 
-        # invariant after iteration k: 
-        #     s[:k+1] == s[n-k-1:]
+        # Invariant: all characters strictly outside [i, j] have been checked and matched; 
+        # i.e. s[0..i-1] mirrors s[j+1..n-1].
         while (i < j):
             if (s[i] != s[j]):
                 return False
