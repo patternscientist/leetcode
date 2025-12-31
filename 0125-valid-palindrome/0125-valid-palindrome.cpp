@@ -12,7 +12,8 @@ public:
             while (i < n-1  && !isalnum(s[i])) ++i;
             while (j > 0    && !isalnum(s[j])) --j;
 
-            if (i < j && toupper(s[i]) != toupper(s[j])) // check if i is still less than j, and be case-insensitive
+            // check if the skipping put i ahead of j, and be case-insensitive
+            if (i > j || toupper(s[i]) != toupper(s[j])) 
                 return false; 
             
             ++i;
