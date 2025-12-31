@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
+        // initialize a map and declate an integer
         unordered_map<int,int> mp; // value -> index
         int need;
         // for each value in nums...
@@ -11,6 +12,6 @@ public:
                return {mp[need], i}; // return if it is...
             mp[nums[i]] = i; // otherwise, map current value to its index
         }
-        return {};
+        return {}; // it shouldn't be possible to get here
     }
 };
