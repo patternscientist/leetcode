@@ -14,7 +14,7 @@ public:
             else if (st.empty() || st.top() != mp[c]) 
                 return false;  
             else 
-                st.pop(); // otherwise we have a match so remove the last seen open paren
+                st.pop(); // otherwise we have a match so pop the last seen open paren
         }
         return st.empty(); // by the end, s is valid iff there are no unmatched open parens
     }
