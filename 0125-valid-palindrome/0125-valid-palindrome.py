@@ -1,10 +1,16 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        s = s.upper() 
-        s = ''.join(c for c in s if c.isalnum())
-        i = 0
-        j = len(s)-1
+        # string preprocessing:
+        s = s.upper() # turn all letters uppercase
+        s = ''.join(c for c in s if c.isalnum()) # and remove non-alphanumeric chars
 
+        n = len(s)
+        # two pointers 
+        i = 0
+        j = n-1
+
+        # invariant after iteration k: 
+        #     s[:k+1] == s[n-k-1:]
         while (i < j):
             if (s[i] != s[j]):
                 return False
