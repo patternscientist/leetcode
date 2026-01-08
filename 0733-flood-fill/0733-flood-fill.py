@@ -1,30 +1,32 @@
-class Solution:
-    def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
-        from queue import Queue
-
+class Solution(object):
+    def floodFill(self, image, sr, sc, color):
+        """
+        :type image: List[List[int]]
+        :type sr: int
+        :type sc: int
+        :type color: int
+        :rtype: List[List[int]]
+        """
         og = image[sr][sc]
         if og == color: return image
 
         m = len(image)
         n = len(image[0])
 
-        q = Queue(maxsize=m * n)
-        q.put((sr,sc))
+        q = deque(maxlen=m*n)
         image[sr][sc] = color
-
-        while not q.empty():
-            (r,c) = q.get()
-            dr = [-1,0,1,0]
-            dc = [0,1,0,-1]
-            for k in range(4):
-                nr = r + dr[k]
-                nc = c + dc[k]
+        q.append((sr,sc))
+        while len(q) != 0:
+            (r,c) = q.popleft()
+            dr = (-1,0,1,0)
+            dc = (0,1,0,-1)
+            for i in range(4):
+                nr = r + dr[i]
+                nc = c + dc[i]
                 if (nr >= 0 and nr < m and 
-                    nc >= 0 and nc < n and 
-                    image[nr][nc] == og):
-                    q.put((nr,nc))
-                    image[nr][nc] = color
-
+                    nc >= 0 and nc < n and
+                   image[nr][nc] == og):
+                   q.append((nr,nc))
+                   image[nr][nc] = color
         return image
-
         
