@@ -1,9 +1,15 @@
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
         mp = {}
         for i,num in enumerate(nums):
             need = target - num
-            if need in mp.keys():
-                return [mp[need], i]
+            if need in mp:
+                return [mp[need],i]
             mp[num] = i
         return []
+        
