@@ -1,17 +1,11 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        int bestAmongEndingAtCurrIdx, best;
+        int end = nums[0], best = nums[0];
         for (int i=0; i<nums.size(); ++i){
-            if (i == 0){ 
-                bestAmongEndingAtCurrIdx = nums[i];
-                best = bestAmongEndingAtCurrIdx;
-            }
-            else{
-                bestAmongEndingAtCurrIdx = max(nums[i], 
-                                               nums[i] + bestAmongEndingAtCurrIdx);
-            }
-            best = max(best, bestAmongEndingAtCurrIdx);
+            end  = max(nums[i], 
+                       nums[i] + end);
+            best = max(best, end);
         }
         return best;
     }
