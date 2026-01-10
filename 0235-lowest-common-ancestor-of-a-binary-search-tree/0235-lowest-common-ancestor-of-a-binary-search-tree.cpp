@@ -11,15 +11,14 @@
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        int rootVal = root->val, pVal = p->val, qVal = q->val;
-        int l = min(pVal, qVal), r = max(pVal, qVal);
-        // rootVal is either within, above, or below the interval [l, r]:
-        if (rootVal >= l && rootVal <= r) // within
-            return root;
-        else if (rootVal > l && rootVal > r) // above
-            return lowestCommonAncestor(root->left, p, q);
-        else // below
-            return lowestCommonAncestor(root->right, p, q);
+        while (root){
+            if (p->val < root->val && q->val < root->val)
+                root = root->left;
+            else if (p->val > root->val && q->val > root->val)
+                root = root->right;
+            else 
+                return root;
+        }
         return nullptr; // shouldn't be possible to reach here
     }
 };
