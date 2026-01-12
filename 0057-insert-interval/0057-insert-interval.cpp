@@ -24,6 +24,7 @@ public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
         int n = intervals.size();
         if (n == 0) return {newInterval};
+
         int start_new = newInterval[0], end_new = newInterval[1], start_i, end_i;
         if (start_new > intervals[n-1][1]){ // newInterval comes after all
             intervals.push_back(newInterval);
@@ -34,15 +35,16 @@ public:
                 ans.push_back(interval);
             return ans;
         } 
+
         vector<int> intervals_i, candidate, mostRecent;
         vector<vector<int>> ans;
         int ansSize;
-        // int start_prev, end_prev;
         for (int i=0; i<n; ++i){
             ansSize = ans.size();
             intervals_i = intervals[i];
             start_i = intervals_i[0];
             end_i   = intervals_i[1];
+
             if (!ansSize == 0 &&
                 i1Belowi2(ans[ansSize-1],newInterval) && 
                 i1Belowi2(newInterval,intervals_i)){
@@ -51,9 +53,10 @@ public:
             } else if (i1Belowi2(intervals_i,newInterval))
                 candidate = intervals_i;
             else if (i1Belowi2(newInterval,intervals_i))
-                candidate = intervals_i; // newInterval;
+                candidate = intervals_i;
             else 
                 candidate = combineIntervals(intervals_i,newInterval);
+            
             if (ans.empty())
                 ans.push_back(candidate);
             else{
