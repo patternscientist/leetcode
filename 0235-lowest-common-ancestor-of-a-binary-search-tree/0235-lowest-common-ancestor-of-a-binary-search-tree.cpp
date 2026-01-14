@@ -12,13 +12,13 @@ class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         while (root){
-            if (p->val < root->val && q->val < root->val)
+            if (root->val > p->val && root->val > q->val)
                 root = root->left;
-            else if (p->val > root->val && q->val > root->val)
+            else if (root->val < p->val && root->val < q->val)
                 root = root->right;
-            else 
+            else
                 return root;
         }
-        return nullptr; // shouldn't be possible to reach here
+        return nullptr; // shouldn't be able to reach here
     }
 };
