@@ -11,21 +11,20 @@
  */
 class Solution {
 public:
-    int treeDepth(TreeNode* root){
+    int heightOrFail(TreeNode* root){
         if (!root) return -1;
-        if (!root->left && !root->right) return 0;
-        return max(1 + treeDepth(root->left),
-                   1 + treeDepth(root->right));
-    }
-    bool isBalanced(TreeNode* root) {
-        if (!root || (!root->left && !root->right))
-            return true;
-            
-        int ld = treeDepth(root->left);
-        int rd = treeDepth(root->right);
+        
+        int lh = heightOrFail(root->left);
+        if (lh == -2) return -2;
 
-        return (isBalanced(root->left)  &&
-                isBalanced(root->right) &&
-                abs(ld-rd) <= 1);
+        int rh = heightOrFail(root->right);
+        if (rh == -2) return -2;
+
+        if (abs(lh - rh) > 1) return -2;
+        return 1 + max(lh, rh);
+    }
+
+    bool isBalanced(TreeNode* root) {
+        return heightOrFail(root) != -2;
     }
 };
