@@ -17,10 +17,9 @@ public:
         if (lh == -2) return -2;
         int rh = heightOrFail(root->right);
         if (rh == -2) return -2;
-        if (abs(lh - rh) > 1) return -2;
-        return 1 + max(lh,rh);
+        if (abs(lh-rh) > 1) return -2;
+        return 1+max(lh,rh);
     }
-
     bool isBalanced(TreeNode* root) {
         return heightOrFail(root) != -2;
     }
