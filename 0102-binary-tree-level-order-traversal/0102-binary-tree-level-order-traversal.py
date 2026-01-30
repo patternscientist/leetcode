@@ -10,13 +10,15 @@ class Solution:
         levels = []
         q = deque()
         q.append(root)
-        while len(q) != 0:
+        while (len(q) != 0):
             sz = len(q)
             level = []
             for _ in range(sz):
                 cur = q.popleft()
                 level.append(cur.val)
-                if cur.left: q.append(cur.left)
-                if cur.right: q.append(cur.right)
+                if cur.left:
+                    q.append(cur.left)
+                if cur.right:
+                    q.append(cur.right)
             levels.append(level)
         return levels
