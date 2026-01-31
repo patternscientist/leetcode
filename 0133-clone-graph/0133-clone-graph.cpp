@@ -23,8 +23,7 @@ class Solution {
 public:
     Node* cloneGraph(Node* node) {
         if (!node) return nullptr;
-        unordered_map<Node*,Node*> mp;
-        mp[node] = new Node(node->val);
+        unordered_map<Node*,Node*> mp{{node,new Node(node->val)}};
         queue<Node*> q;
         q.push(node);
         while (!q.empty()){
