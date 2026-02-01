@@ -1,27 +1,48 @@
 class Trie {
-public:
-    unordered_set<string> prefixes;
-    unordered_set<string> elements;
+    struct Node{
+        int end = false;
+        array<Node*,26> next{};
+        Node() = default;
+    };
 
+    Node* root;
+
+public:
     Trie() {
-        
+        root = new Node();
     }
     
     void insert(string word) {
-        elements.insert(word);
-        string prefix = "";
+        Node* cur = root;
+        int i;
         for (char c : word){
-            prefix.push_back(c);
-            prefixes.insert(prefix);
+            i = c - 'a';
+            if (!cur->next[i]) cur->next[i] = new Node();
+            cur = cur->next[i];
         }
+        cur->end = true;
     }
     
     bool search(string word) {
-        return elements.count(word);
+        Node* cur = root;
+        int i;
+        for (char c : word){
+            i = c - 'a';
+            if (!cur->next[i]) return false;
+            cur = cur->next[i];
+        }
+        return cur->end;
     }
     
     bool startsWith(string prefix) {
-        return prefixes.count(prefix);
+        Node* cur = root;
+        int i;
+        for (char c : prefix){
+            i = c - 'a';
+            if (!cur->next[i]) return false;
+            cur = cur->next[i];
+        }
+        return true;
     }
 };
 
