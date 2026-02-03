@@ -8,7 +8,7 @@ class Solution:
             sub = self.solve(coins,amt-denom,memo)
             if sub >= 0: 
                 best = min(best,sub+1)  
-            if denom >= amt:
+            if denom <= amt:
                 memo[amt-denom] = sub
         return -1 if best == amt + 1 else best
 
