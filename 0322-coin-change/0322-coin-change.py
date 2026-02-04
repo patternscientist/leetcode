@@ -1,18 +1,10 @@
 class Solution:
-    def solve(self, coins: List[int], amt: int, memo: List[int]):
-        if amt < 0:         return -1
-        if amt == 0:        return 0
-        if memo[amt] != -2: return memo[amt]
-        for denom in coins:
-            if amt == denom:
-                return 1
-        best = amt+1
-        for denom in coins:
-            sub = self.solve(coins,amt-denom,memo)
-            if sub >= 0: best = min(best,sub+1)
-        memo[amt] = -1 if best == amt+1 else best
-        return memo[amt]
-
     def coinChange(self, coins: List[int], amount: int) -> int:
-        memo = [-2]*(amount + 1)
-        return self.solve(coins,amount,memo)
+        INF = amount + 1
+        dp = [INF]*(amount + 1) 
+        dp[0] = 0
+        for n in range(1,amount+1):
+            for denom in coins:
+                if denom <= n: 
+                    dp[n] = min(dp[n],dp[n-denom]+1)
+        return dp[amount] if dp[amount] != INF else -1
