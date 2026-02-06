@@ -2,18 +2,18 @@ class Solution {
 public:
     int longestPalindrome(string s) {
         int ans = 0;
-        int seen[256];
+        int seen[58];
         for (char c : s)
-            ++seen[c];
-        bool single = false;
+            ++seen[c-'A'];
+        bool hasCenterPoint = false;
         for (int n : seen){
             if (n % 2 == 1){
-                single = true;
+                hasCenterPoint = true; // longest permutation must be odd length with a center point
                 ans += n-1;
             } else 
                 ans += n;
         }
-        if (single) ans += 1;
+        if (hasCenterPoint) ans += 1;
         return ans;
     }
 };
