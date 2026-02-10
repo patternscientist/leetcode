@@ -11,23 +11,14 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if (!head)       return nullptr;
-        if (!head->next) return head;
-        unordered_map<ListNode*,ListNode*> mp;
-        ListNode* prev = head;
-        while (head->next){
-            ListNode* cur = head->next;
-            mp[cur] = prev;
-            prev = cur;
-            head = head->next;
+        ListNode* prev = nullptr;
+        ListNode* cur  = head;
+        while (cur){
+            ListNode* nxt = cur->next;
+            cur->next     = prev;
+            prev          = cur;
+            cur           = nxt;
         }
-        ListNode* dummy = new ListNode();
-        dummy->next = head;
-        while (mp.count(head)){
-            mp[head]->next = nullptr;
-            head->next = mp[head];
-            head = mp[head];
-        }
-        return dummy->next;
-    }   
+        return prev;
+    }
 };
