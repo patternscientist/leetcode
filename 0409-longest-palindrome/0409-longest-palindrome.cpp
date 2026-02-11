@@ -1,19 +1,17 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
+        int seen[256];
         int ans = 0;
-        int seen[58];
-        for (char c : s)
-            ++seen[c-'A'];
-        bool hasCenterPoint = false;
-        for (int n : seen){
-            if (n % 2 == 1){
-                hasCenterPoint = true; // longest permutation must be odd length with a center point
-                ans += n-1;
-            } else 
-                ans += n;
+        for (char ch : s)
+            seen[ch]++;
+        bool hasCenter = false;
+        for (int freq : seen){
+            ans += floor(freq / 2) * 2;
+            if (!hasCenter && freq % 2 == 1)
+                hasCenter = true;
         }
-        if (hasCenterPoint) ans += 1;
+        if (hasCenter) ans++;
         return ans;
     }
 };
