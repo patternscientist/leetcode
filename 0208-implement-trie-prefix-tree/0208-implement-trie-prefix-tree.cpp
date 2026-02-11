@@ -1,12 +1,12 @@
 class Trie {
     struct Node{
         bool end = false;
-        array<Node*,26> next{};
+        array<Node*,26> nxt{};
         Node() = default;
     };
 
 public:
-    Node* root;
+    Node* root = nullptr;
 
     Trie() {
         root = new Node();
@@ -14,30 +14,33 @@ public:
     
     void insert(string word) {
         Node* cur = root;
-        for (char c : word){
-            int i = c-'a';
-            if (!cur->next[i]) cur->next[i] = new Node();
-            cur = cur->next[i];
+        for (char ch : word){
+            int i = ch-'a';
+            if (!cur->nxt[i])
+                cur->nxt[i] = new Node();
+            cur = cur->nxt[i];
         }
         cur->end = true;
     }
     
     bool search(string word) {
         Node* cur = root;
-        for (char c : word){
-            int i = c-'a';
-            if (!cur->next[i]) return false;
-            cur = cur->next[i];
+        for (char ch : word){
+            int i = ch-'a';
+            if (!cur->nxt[i])
+                return false;
+            cur = cur->nxt[i];
         }
         return cur->end;
     }
     
     bool startsWith(string prefix) {
         Node* cur = root;
-        for (char c : prefix){
-            int i = c-'a';
-            if (!cur->next[i]) return false;
-            cur = cur->next[i];
+        for (char ch : prefix){
+            int i = ch-'a';
+            if (!cur->nxt[i])
+                return false;
+            cur = cur->nxt[i];
         }
         return true;
     }
