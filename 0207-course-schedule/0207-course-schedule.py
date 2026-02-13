@@ -1,31 +1,21 @@
-class Solution(object):
-    def canFinish(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: bool
-        """
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         adj = [[] for _ in range(numCourses)]
         indeg = [0]*numCourses
-        
-        for p in prerequisites:
-            a,b = p
+        for preq in prerequisites:
+            a,b = preq
             adj[b].append(a)
             indeg[a] += 1
-        
         q = deque()
-        for c in range(numCourses):
-            if indeg[c] == 0:
-                q.append(c)
-        
+        for course,deg in enumerate(indeg):
+            if deg == 0:
+                q.append(course)
         taken = 0
         while len(q) != 0:
-            c = q.popleft()
+            course = q.popleft()
             taken += 1
-            for d in adj[c]:
-                indeg[d] -= 1
-                if indeg[d] == 0:
-                    q.append(d)
-        
+            for nextCourse in adj[course]:
+                indeg[nextCourse] -= 1
+                if indeg[nextCourse] == 0:
+                    q.append(nextCourse)
         return taken == numCourses
-        
