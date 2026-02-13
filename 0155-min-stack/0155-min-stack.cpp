@@ -1,41 +1,22 @@
 class MinStack {
-    struct Node{
-        int val;
-        int count  = 0;
-        Node* next = nullptr;
-
-        Node(){++count;};
-        Node(int val_){
-            val = val_;
-            ++count;
-        };
-    };
-
 public:
     stack<int> st;
-    Node* min = nullptr;
+    stack<int> mins;
 
     MinStack() {
-        
+
     }
     
     void push(int val) {
         st.push(val);
-        if (!min){
-            min = new Node(val);
-        } else if (val == min->val){
-            ++min->count;
-        } else if (val < min->val){
-            Node* tmp = min;
-            min = new Node(val);
-            min->next = tmp;
-        }
+        if (mins.empty() || mins.top() >= val)
+            mins.push(val);
     }
     
     void pop() {
-        if (min->val == st.top() && --min->count == 0)
-            min = min->next;
-        st.pop();
+        int x = st.top(); st.pop();
+        if (mins.top() == x)
+            mins.pop();
     }
     
     int top() {
@@ -43,7 +24,7 @@ public:
     }
     
     int getMin() {
-        return min->val;
+        return mins.top();
     }
 };
 
