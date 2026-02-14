@@ -15,7 +15,6 @@ class Solution:
                 grid[r][c] = 'X'
                 while len(q) != 0:
                     i,j = q.popleft()
-                    grid[i][j] = 'X'
                     for k in range(4):
                         ni = i + dr[k]
                         nj = j + dc[k]
