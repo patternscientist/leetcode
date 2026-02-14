@@ -1,11 +1,13 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        vector<int> dp(n+1,-1);
-        dp[0] = 1;
-        dp[1] = 1;
-        for (int k=2; k<=n; ++k)
-            dp[k] = dp[k-1] + dp[k-2];
-        return dp[n];
+        int a = 1; // ways to get 0
+        int b = 1; // ways to get 1
+        for (int k=2; k<=n; ++k){
+            int c = a + b; // ways to get k
+            a = b;
+            b = c;
+        }
+        return b;
     }
 };
