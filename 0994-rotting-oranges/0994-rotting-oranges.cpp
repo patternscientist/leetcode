@@ -6,10 +6,13 @@ public:
         int dr[4] = {0,-1,0,1};
         int dc[4] = {-1,0,1,0};
         queue<pair<int,int>> q;
+        vector<pair<int,int>> fresh;
         for (int r=0; r<m; ++r){
             for (int c=0; c<n; ++c){
                 if (grid[r][c] == 2)
                     q.push({r,c});
+                else if (grid[r][c] == 1)
+                    fresh.push_back({r,c});
             }
         }
         int minMinutes = 0;
@@ -33,12 +36,8 @@ public:
             if (madeRotten)
                 ++minMinutes;
         }
-        for (int r=0; r<m; ++r){
-            for (int c=0; c<n; ++c){
-                if (grid[r][c] == 1)
-                    return -1;
-            }
-        }
+        for (const pair<int,int>& pos : fresh)
+            if (grid[pos.first][pos.second] == 1) return -1;
         return minMinutes;
     }
 };
