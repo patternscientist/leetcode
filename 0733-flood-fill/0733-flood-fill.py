@@ -1,32 +1,23 @@
-class Solution(object):
-    def floodFill(self, image, sr, sc, color):
-        """
-        :type image: List[List[int]]
-        :type sr: int
-        :type sc: int
-        :type color: int
-        :rtype: List[List[int]]
-        """
-        og = image[sr][sc]
-        if og == color: return image
-
+class Solution:
+    def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+        ogColor = image[sr][sc]
+        if ogColor == color: return image
         m = len(image)
         n = len(image[0])
-
-        q = deque(maxlen=m*n)
+        q = deque()
         image[sr][sc] = color
         q.append((sr,sc))
+        dr = [0,-1,0,1]
+        dc = [-1,0,1,0]
         while len(q) != 0:
-            (r,c) = q.popleft()
-            dr = (-1,0,1,0)
-            dc = (0,1,0,-1)
-            for i in range(4):
-                nr = r + dr[i]
-                nc = c + dc[i]
-                if (nr >= 0 and nr < m and 
-                    nc >= 0 and nc < n and
-                   image[nr][nc] == og):
-                   q.append((nr,nc))
-                   image[nr][nc] = color
+            r,c = q.popleft()
+            for k in range(4):
+                nr = r + dr[k]
+                nc = c + dc[k]
+                if (0 <= nr and nr < m and
+                    0 <= nc and nc < n and 
+                    image[nr][nc] == ogColor):
+                    image[nr][nc] = color
+                    q.append((nr,nc))
         return image
         
