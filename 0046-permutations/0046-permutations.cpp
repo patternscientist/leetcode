@@ -2,25 +2,27 @@ class Solution {
 public:
     vector<vector<int>> ans;
     vector<int> path;
-    void dfs(const vector<int>& nums, vector<int>& used){
-        if (path.size() == nums.size()){
+    void dfs(const vector<int>& nums, const int numsSize, vector<bool>& used) {
+        if (path.size() == numsSize){
             ans.push_back(path);
             return;
         }
-        for (int i=0; i<nums.size(); ++i){
-            if (used[i]) continue;
-            used[i] += 1;
+        for (int i=0; i<numsSize; ++i){
+            if (used[i])
+                continue;
+            used[i] = true;
             int x = nums[i];
             path.push_back(x);
-            dfs(nums,used);
+            dfs(nums,numsSize,used);
             path.pop_back();
-            used[i] -= 1;
+            used[i] = false;
         }
-        return; 
+        return;
     }
     vector<vector<int>> permute(vector<int>& nums) {
-        vector<int> used(nums.size(),0);
-        dfs(nums,used);
+        int n = nums.size();
+        vector<bool> used(n,false);
+        dfs(nums,n,used);
         return ans;
     }
 };
