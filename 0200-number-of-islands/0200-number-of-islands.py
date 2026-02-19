@@ -2,25 +2,25 @@ class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         m = len(grid)
         n = len(grid[0])
-        islands = 0
-        q = deque()
         dr = [0,-1,0,1]
         dc = [-1,0,1,0]
+        q = deque()
+        islands = 0
         for r in range(m):
             for c in range(n):
-                if grid[r][c] != '1':
-                    continue
+                if grid[r][c] != "1":
+                    continue 
                 islands += 1
+                grid[r][c] = "X"
                 q.append((r,c))
-                grid[r][c] = 'X'
                 while len(q) != 0:
-                    i,j = q.popleft()
+                    currR,currC = q.popleft()
                     for k in range(4):
-                        ni = i + dr[k]
-                        nj = j + dc[k]
-                        if (0 <= ni and ni < m and
-                            0 <= nj and nj < n and
-                            grid[ni][nj] == '1'):
-                            q.append((ni,nj))
-                            grid[ni][nj] = 'X'
+                        nr = currR + dr[k]
+                        nc = currC + dc[k]
+                        if (0 <= nr and nr < m and 
+                            0 <= nc and nc < n and
+                            grid[nr][nc] == "1"):
+                            grid[nr][nc] = "X"
+                            q.append((nr,nc))
         return islands
