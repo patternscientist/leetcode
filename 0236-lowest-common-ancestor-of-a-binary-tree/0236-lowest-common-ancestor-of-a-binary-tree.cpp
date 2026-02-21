@@ -9,37 +9,13 @@
  */
 class Solution {
 public:
-    bool hasBoth(TreeNode* root, TreeNode* p, TreeNode* q){
-        if (!root) return false;
-        queue<TreeNode*> nodeQueue;
-        nodeQueue.push(root);
-        bool sawP = false, sawQ = false;
-        TreeNode* cur;
-        while (!nodeQueue.empty()){
-            cur = nodeQueue.front(); nodeQueue.pop();
-            if (cur == p)
-                sawP = true;
-            else if (cur == q)
-                sawQ = true;
-            if (sawP && sawQ)
-                return true;
-            if (cur->left)
-                nodeQueue.push(cur->left);
-            if (cur->right)
-                nodeQueue.push(cur->right);
-        }
-        return false;
-    }
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        TreeNode* cur = root;
-        while (cur){
-            if (hasBoth(cur->left,p,q))
-                cur = cur->left;
-            else if (hasBoth(cur->right,p,q))
-                cur = cur->right;
-            else
-                return cur;
-        }
-        return nullptr;
+        if (!root || root == p || root == q)
+            return root;
+        TreeNode* left  = lowestCommonAncestor(root->left,p,q);
+        TreeNode* right = lowestCommonAncestor(root->right,p,q);
+        if (left && right)
+            return root;
+        return left ? left : right;
     }
 };
