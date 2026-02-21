@@ -33,9 +33,6 @@ public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         TreeNode* cur = root;
         while (cur){
-            cout << "cur in LCA loop: " << cur->val << endl;
-            cout << "left hasBoth?: \n\n" << hasBoth(cur->left,p,q) << endl;
-            cout << "right hasBoth?: \n\n" << hasBoth(cur->right,p,q) << endl;
             if (hasBoth(cur->left,p,q))
                 cur = cur->left;
             else if (hasBoth(cur->right,p,q))
