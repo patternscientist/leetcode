@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        sort(intervals.begin(), 
+        sort(intervals.begin(),
              intervals.end(),
              [](const auto& a, const auto& b){
                 return a[0] < b[0];
