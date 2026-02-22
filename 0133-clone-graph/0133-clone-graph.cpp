@@ -23,17 +23,17 @@ class Solution {
 public:
     Node* cloneGraph(Node* node) {
         if (!node) return nullptr;
-        unordered_map<Node*,Node*> mp{{node, new Node(node->val)}};
+        unordered_map<Node*,Node*> mp = {{node,new Node(node->val)}};
         queue<Node*> q;
         q.push(node);
         while (!q.empty()){
-            Node* v = q.front(); q.pop();
-            for (Node* u : v->neighbors){
-                if (!mp.count(u)){
-                    mp[u] = new Node(u->val);
-                    q.push(u);
+            Node* cur = q.front(); q.pop();
+            for (Node* neighbor : cur->neighbors){
+                if (!mp.count(neighbor)){
+                    mp[neighbor] = new Node(neighbor->val);
+                    q.push(neighbor);
                 }
-                mp[v]->neighbors.push_back(mp[u]);
+                mp[cur]->neighbors.push_back(mp[neighbor]);
             }
         }
         return mp[node];
