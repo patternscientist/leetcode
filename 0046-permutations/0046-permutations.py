@@ -6,16 +6,15 @@ class Solution:
         used = [False] * n
         def dfs() -> None:
             if len(path) == n:
-                ans.append(path.copy())
+                ans.append(path[::])
             for i in range(n):
                 if used[i]:
                     continue
-                x = nums[i]
+                x       = nums[i]
                 used[i] = True
                 path.append(x)
                 dfs()
                 path.remove(x)
                 used[i] = False
-            return
         dfs()
         return ans
