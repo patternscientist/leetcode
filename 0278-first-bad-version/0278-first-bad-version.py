@@ -3,10 +3,9 @@
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
-        l = 1
-        r = n
+        l, r = 1, n
         while l < r:
-            mid = (l+r)//2
+            mid = (l + r) // 2
             if isBadVersion(mid):
                 r = mid
             else:
