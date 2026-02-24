@@ -1,19 +1,16 @@
-class Solution(object):
-    def evalRPN(self, tokens):
-        """
-        :type tokens: List[str]
-        :rtype: int
-        """
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        sign = lambda x: 1 if x == 0 else x // abs(x)
+        ops = {"+" : lambda x,y: x+y,
+               "-" : lambda x,y: x-y,
+               "*" : lambda x,y: x*y,
+               "/" : lambda x,y: (sign(x) * sign(y)) * (abs(x) // abs(y))}
         st = deque()
-        funcs = {"+" : lambda n1,n2 : n1+n2,
-                "-" : lambda n1,n2 : n1-n2,
-                "*" : lambda n1,n2 : n1*n2,
-                "/" : lambda n1,n2 : int(floor(float(n1)/n2)) if float(n1)/n2 > 0 else int(ceil(float(n1)/n2))}
         for token in tokens:
-            if token in funcs:
+            if token in ops:
                 n2 = st.pop()
                 n1 = st.pop()
-                st.append(funcs[token](n1,n2))
+                st.append(ops[token](n1,n2))
             else:
                 st.append(int(token))
         return st[-1]
