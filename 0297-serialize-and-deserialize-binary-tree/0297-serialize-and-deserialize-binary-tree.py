@@ -14,15 +14,17 @@ class Codec:
         :rtype: str
         """
         if not root: return ""
+        s = ""
         q = deque()
         q.append(root)
-        s = str(root.val) + "#"
         while len(q) != 0:
             cur = q.popleft()
-            s += (str(cur.left.val) + "#" if cur.left else "n#")
-            if cur.left: q.append(cur.left)
-            s += (str(cur.right.val) + "#" if cur.right else "n#")
-            if cur.right: q.append(cur.right)
+            if cur:
+                s += str(cur.val) + "#"
+                q.append(cur.left)
+                q.append(cur.right)
+            else:
+                s += "n#"
         return s
 
     def deserialize(self, data):
@@ -31,29 +33,28 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        if data == "": return None
-        data = data.split('#')[:-1]
-        root = TreeNode(int(data[0]))
+        if data == "":
+            return None
+        vals = data.split("#")[:-1]       
+        root = TreeNode(int(vals[0]))
         q = deque()
         q.append(root)
-        level = 1
-        idx = 0
-        while len(q) != 0:
-            for i in range(1<<level):
-                if len(q) == 0:
-                    break
-                cur = q.popleft()
-                for j in range(2):
-                    idx += 1
-                    if j % 2 == 0:
-                        cur.left = TreeNode(int(data[idx])) if data[idx] != "n" else None
-                        if cur.left:
-                            q.append(cur.left)
-                    else:
-                        cur.right = TreeNode(int(data[idx])) if data[idx] != "n" else None
-                        if cur.right:
-                            q.append(cur.right)
-            level += 1
+        i = 1
+        n = len(vals)
+        while len(q) != 0 and i < n:
+            cur = q.popleft()
+            if i < n and vals[i] != "n":
+                cur.left = TreeNode(int(vals[i]))
+                q.append(cur.left)
+            else:
+                cur.left = None
+            i += 1
+            if i < n and vals[i] != "n":
+                cur.right = TreeNode(int(vals[i]))
+                q.append(cur.right)
+            else:
+                cur.right = None
+            i += 1
         return root
 
 # Your Codec object will be instantiated and called as such:
