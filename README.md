@@ -18,6 +18,7 @@ A collection of solutions to selected LeetCode problems.
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -31,4 +32,12 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 <!---LeetCode Topics End-->
