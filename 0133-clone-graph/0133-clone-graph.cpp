@@ -28,7 +28,7 @@ public:
         q.push(node);
         while (!q.empty()){
             Node* cur = q.front(); q.pop();
-            for (const auto& neighbor : cur->neighbors){
+            for (Node* neighbor : cur->neighbors){
                 if (!mp.count(neighbor)){
                     mp[neighbor] = new Node(neighbor->val);
                     q.push(neighbor);
