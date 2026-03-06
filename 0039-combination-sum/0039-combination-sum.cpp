@@ -2,23 +2,24 @@ class Solution {
 public:
     vector<vector<int>> ans;
     vector<int> path;
-    void dfs(int start, int remaining, vector<int>& cand){
+
+    void dfs(const vector<int>& cand, int sz, int start, int remaining){
+        if (remaining < 0)
+            return;
         if (remaining == 0){
             ans.push_back(path);
             return;
         }
-        if (remaining < 0)
-            return;
-        for (int i=start; i<cand.size(); ++i){
+        for (int i=start; i<sz; ++i){
             int x = cand[i];
             path.push_back(x);
-            dfs(i,remaining-x,cand);
+            dfs(cand,sz,i,remaining-x);
             path.pop_back();
         }
         return;
     }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        dfs(0,target,candidates);
+        dfs(candidates,(int)candidates.size(),0,target);
         return ans;
     }
 };
