@@ -23,6 +23,7 @@ A collection of solutions to selected LeetCode problems.
 | [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
+| [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -71,6 +72,7 @@ A collection of solutions to selected LeetCode problems.
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
@@ -84,6 +86,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/patternscientist/leetcode/tree/main/0039-combination-sum/) | Medium |
+| [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -93,4 +96,12 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/patternscientist/leetcode/tree/main/0039-combination-sum/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 <!---LeetCode Topics End-->
