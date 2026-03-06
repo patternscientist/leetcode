@@ -20,6 +20,7 @@ A collection of solutions to selected LeetCode problems.
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 ## Depth-First Search
@@ -43,11 +44,13 @@ A collection of solutions to selected LeetCode problems.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 ## Topological Sort
 | Problem Name | Difficulty |
