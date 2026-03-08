@@ -13,6 +13,7 @@ A collection of solutions to selected LeetCode problems.
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -24,6 +25,7 @@ A collection of solutions to selected LeetCode problems.
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
+| [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -52,6 +54,7 @@ A collection of solutions to selected LeetCode problems.
 | [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -119,4 +122,8 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 <!---LeetCode Topics End-->
