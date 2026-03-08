@@ -5,7 +5,7 @@ class Solution:
         n    = len(nums)
         used = [False] * n
         def dfs() -> None:
-            if len(path) == n:
+            if all(used):
                 ans.append(path.copy())
                 return
             for i,num in enumerate(nums):
