@@ -3,7 +3,7 @@ public:
     vector<vector<int>> ans;
     vector<int> path;
     void dfs(const vector<int>& nums, const int n, vector<bool>& used){
-        if (all_of(used.begin(), used.end(), [](bool v){return v;})){
+        if (path.size() == n){ // checking if all of used was true w/ all_of was slower than this (one the 1 test I did)
             ans.push_back(path);
             return;
         }
