@@ -1,32 +1,32 @@
 class Solution {
 public:
     int numIslands(vector<vector<char>>& grid) {
-        int m = grid.size();
-        int n = grid[0].size();
-        int islands = 0;
-        queue<pair<int,int>> q;
+        int m = (int)grid.size();
+        int n = (int)grid[0].size();
         int dr[4] = {0,-1,0,1};
         int dc[4] = {-1,0,1,0};
+        queue<pair<int,int>> q;
+        int islands = 0;
         for (int r=0; r<m; ++r){
             for (int c=0; c<n; ++c){
                 if (grid[r][c] != '1')
                     continue;
-                islands += 1;
+                islands++;
                 grid[r][c] = 'X';
                 q.push({r,c});
                 while (!q.empty()){
-                    auto [i,j] = q.front(); q.pop();
+                    auto [curR, curC] = q.front(); q.pop();
                     for (int k=0; k<4; ++k){
-                        int ni = i + dr[k];
-                        int nj = j + dc[k];
-                        if (0 <= ni && ni < m &&
-                            0 <= nj && nj < n &&
-                            grid[ni][nj] == '1'){
-                                grid[ni][nj] = 'X';
-                                q.push({ni,nj});
+                        int nr = curR + dr[k];
+                        int nc = curC + dc[k];
+                        if (0 <= nr && nr < m && 
+                            0 <= nc && nc < n &&
+                            grid[nr][nc] == '1'){
+                                grid[nr][nc] = 'X';
+                                q.push({nr,nc});
                             }
                     }
-                }  
+                }
             }
         }
         return islands;
