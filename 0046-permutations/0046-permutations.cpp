@@ -3,7 +3,7 @@ public:
     vector<vector<int>> ans;
     vector<int> path;
     void dfs(const vector<int>& nums, const int n, vector<bool>& used){
-        if (path.size() == n){
+        if (all_of(used.begin(), used.end(), [](bool v){return v;})){
             ans.push_back(path);
             return;
         }
