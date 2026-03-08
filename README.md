@@ -29,12 +29,14 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/patternscientist/leetcode/tree/main/0207-course-schedule/) | Medium |
+| [0226-invert-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/patternscientist/leetcode/tree/main/0207-course-schedule/) | Medium |
+| [0226-invert-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 ## Graph Theory
@@ -60,10 +62,12 @@ A collection of solutions to selected LeetCode problems.
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0226-invert-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0226-invert-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0226-invert-binary-tree/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 ## Two Pointers
 | Problem Name | Difficulty |
