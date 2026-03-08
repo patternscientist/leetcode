@@ -3,20 +3,19 @@ public:
     priority_queue<int> lo;
     priority_queue<int,vector<int>,greater<int>> hi;
 
-    MedianFinder() {
+    MedianFinder() {    
         
     }
     
     void addNum(int num) {
         if (lo.empty() || num <= lo.top())
             lo.push(num);
-        else 
+        else
             hi.push(num);
-        
         if (lo.size() > hi.size() + 1){
             hi.push(lo.top());
             lo.pop();
-        } else if (hi.size() > lo.size()){
+        } else if (lo.size() < hi.size()){
             lo.push(hi.top());
             hi.pop();
         }
@@ -25,8 +24,7 @@ public:
     double findMedian() {
         if (lo.size() > hi.size())
             return (double)lo.top();
-        else 
-            return ((double)lo.top() + (double)hi.top()) / 2.0;
+        return ((double)lo.top() + (double)hi.top()) / 2.0;
     }
 };
 
