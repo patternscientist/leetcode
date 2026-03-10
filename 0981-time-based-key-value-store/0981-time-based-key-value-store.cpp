@@ -11,11 +11,13 @@ public:
     }
     
     string get(string key, int timestamp) {
-        if (!mp.count(key))
+        const auto& it = mp.find(key);
+        if (it == mp.end())
             return "";
-        auto &vec = mp[key];
+        const auto& vec = it->second;
+        int n = vec.size();
         int l = 0;
-        int r = (int)vec.size()-1;
+        int r = n-1;
         int ans = -1;
         while (l <= r){
             int mid = l + (r - l) / 2;
