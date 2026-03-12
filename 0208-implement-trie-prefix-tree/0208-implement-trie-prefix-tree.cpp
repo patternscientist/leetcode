@@ -1,13 +1,13 @@
 class Trie {
     struct Node{
-        bool end = false;
-        array<Node*,26> nxt{};
+        int end = false;
+        array<Node*,26> nxt{}; // don't forget the curly brackets!
         Node() = default;
     };
 
-public:
-    Node* root = nullptr;
+    Node* root;
 
+public:
     Trie() {
         root = new Node();
     }
