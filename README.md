@@ -11,6 +11,7 @@ A collection of solutions to selected LeetCode problems.
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
@@ -26,6 +27,7 @@ A collection of solutions to selected LeetCode problems.
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
+| [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Depth-First Search
@@ -55,6 +57,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
+| [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
@@ -155,4 +158,8 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/patternscientist/leetcode/tree/main/0070-climbing-stairs/) | Easy |
+## Trie
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 <!---LeetCode Topics End-->
