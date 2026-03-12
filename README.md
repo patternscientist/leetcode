@@ -6,6 +6,7 @@ A collection of solutions to selected LeetCode problems.
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 ## Design
 | Problem Name | Difficulty |
@@ -77,6 +78,7 @@ A collection of solutions to selected LeetCode problems.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 ## Sorting
 | Problem Name | Difficulty |
@@ -96,6 +98,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/patternscientist/leetcode/tree/main/0039-combination-sum/) | Medium |
+| [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0046-permutations](https://github.com/patternscientist/leetcode/tree/main/0046-permutations/) | Medium |
 | [0056-merge-intervals](https://github.com/patternscientist/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
@@ -105,6 +108,7 @@ A collection of solutions to selected LeetCode problems.
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
@@ -135,4 +139,8 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/patternscientist/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 <!---LeetCode Topics End-->
