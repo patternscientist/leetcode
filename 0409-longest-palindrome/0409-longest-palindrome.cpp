@@ -1,17 +1,16 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
-        int seen[256];
-        int ans = 0;
+        int seen[128];
         for (char ch : s)
             seen[ch]++;
         bool hasCenter = false;
+        int ans = 0;
         for (int freq : seen){
-            ans += floor(freq / 2) * 2;
-            if (!hasCenter && freq % 2 == 1)
+            ans += (freq / 2) * 2;
+            if (freq % 2 != 0 && !hasCenter)
                 hasCenter = true;
         }
-        if (hasCenter) ans++;
-        return ans;
+        return hasCenter ? ans+1 : ans;
     }
 };
