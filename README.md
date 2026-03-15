@@ -29,6 +29,7 @@ A collection of solutions to selected LeetCode problems.
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
+| [0409-longest-palindrome](https://github.com/patternscientist/leetcode/tree/main/0409-longest-palindrome/) | Easy |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -60,6 +61,7 @@ A collection of solutions to selected LeetCode problems.
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0409-longest-palindrome](https://github.com/patternscientist/leetcode/tree/main/0409-longest-palindrome/) | Easy |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
@@ -162,4 +164,8 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0409-longest-palindrome](https://github.com/patternscientist/leetcode/tree/main/0409-longest-palindrome/) | Easy |
 <!---LeetCode Topics End-->
