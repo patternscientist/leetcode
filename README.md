@@ -57,6 +57,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
@@ -157,6 +158,7 @@ A collection of solutions to selected LeetCode problems.
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
 | [0070-climbing-stairs](https://github.com/patternscientist/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 ## Memoization
 | Problem Name | Difficulty |
@@ -178,4 +180,12 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/patternscientist/leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
 <!---LeetCode Topics End-->
