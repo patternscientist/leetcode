@@ -95,11 +95,13 @@ A collection of solutions to selected LeetCode problems.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/patternscientist/leetcode/tree/main/0015-3sum/) | Medium |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/patternscientist/leetcode/tree/main/0015-3sum/) | Medium |
 | [0056-merge-intervals](https://github.com/patternscientist/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
@@ -115,6 +117,7 @@ A collection of solutions to selected LeetCode problems.
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/patternscientist/leetcode/tree/main/0015-3sum/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/patternscientist/leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0039-combination-sum](https://github.com/patternscientist/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
