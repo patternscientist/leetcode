@@ -117,6 +117,7 @@ A collection of solutions to selected LeetCode problems.
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0046-permutations](https://github.com/patternscientist/leetcode/tree/main/0046-permutations/) | Medium |
 | [0056-merge-intervals](https://github.com/patternscientist/leetcode/tree/main/0056-merge-intervals/) | Medium |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/patternscientist/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
@@ -126,6 +127,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0070-climbing-stairs](https://github.com/patternscientist/leetcode/tree/main/0070-climbing-stairs/) | Easy |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
