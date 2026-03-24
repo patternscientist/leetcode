@@ -1,13 +1,15 @@
+
 class Trie {
-    struct Node{
-        int end = false;
-        array<Node*,26> nxt{}; // don't forget the curly brackets!
+public:
+    class Node {
+        public:
+        bool end = false;
+        array<Node*,26> nxt{};
         Node() = default;
     };
 
     Node* root;
 
-public:
     Trie() {
         root = new Node();
     }
