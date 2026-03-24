@@ -3,8 +3,8 @@ public:
     priority_queue<int> lo;
     priority_queue<int,vector<int>,greater<int>> hi;
 
-    MedianFinder() {    
-        
+    MedianFinder() {
+
     }
     
     void addNum(int num) {
@@ -12,12 +12,11 @@ public:
             lo.push(num);
         else
             hi.push(num);
+        
         if (lo.size() > hi.size() + 1){
-            hi.push(lo.top());
-            lo.pop();
-        } else if (lo.size() < hi.size()){
-            lo.push(hi.top());
-            hi.pop();
+            hi.push(lo.top()); lo.pop();
+        } else if (lo.size() < hi.size()) {
+            lo.push(hi.top()); hi.pop();
         }
     }
     
