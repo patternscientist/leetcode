@@ -52,6 +52,7 @@ A collection of solutions to selected LeetCode problems.
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0994-rotting-oranges](https://github.com/patternscientist/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -130,6 +131,7 @@ A collection of solutions to selected LeetCode problems.
 | [0238-product-of-array-except-self](https://github.com/patternscientist/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0994-rotting-oranges](https://github.com/patternscientist/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -160,6 +162,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0994-rotting-oranges](https://github.com/patternscientist/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
