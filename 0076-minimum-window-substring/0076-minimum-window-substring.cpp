@@ -1,14 +1,16 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        int m = s.size(), n = t.size();
-        if (m < n) return "";
-        vector<int> need(128,0);
-        for (const char& ch : t)
+        int m = s.size();
+        int n = t.size();
+        if (m < n)
+            return "";
+        int need[128];
+        for (char ch : t)
             need[ch]++;
         int missing = n;
-        int bestStart = 0;
         int bestLen = INT_MAX;
+        int bestStart = 0;
         int l = 0;
         for (int r=0; r<m; ++r){
             char cr = s[r];
@@ -18,7 +20,7 @@ public:
             while (missing == 0){
                 int winLen = r-l+1;
                 if (winLen < bestLen){
-                    bestLen   = winLen;
+                    bestLen = winLen;
                     bestStart = l;
                 }
                 char cl = s[l];
@@ -28,6 +30,6 @@ public:
                 l++;
             }
         }
-        return (bestLen == INT_MAX) ? "" : s.substr(bestStart,bestLen);
+        return bestLen == INT_MAX ? "" : s.substr(bestStart,bestLen);
     }
 };
