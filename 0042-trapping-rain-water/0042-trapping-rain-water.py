@@ -1,13 +1,15 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
         n = len(height)
-        l,r = 0,n-1
-        leftMax,rightMax = 0,0
+        l = 0
+        r = n-1
+        leftMax = 0
+        rightMax = 0
         ans = 0
         while l < r:
             leftMax = max(leftMax,height[l])
             rightMax = max(rightMax,height[r])
-            if leftMax <= rightMax:
+            if leftMax < rightMax:
                 ans += leftMax - height[l]
                 l += 1
             else:
