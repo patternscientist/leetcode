@@ -7,10 +7,12 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
+| [0155-min-stack](https://github.com/patternscientist/leetcode/tree/main/0155-min-stack/) | Medium |
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0155-min-stack](https://github.com/patternscientist/leetcode/tree/main/0155-min-stack/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
