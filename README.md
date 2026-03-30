@@ -111,6 +111,7 @@ A collection of solutions to selected LeetCode problems.
 | [0015-3sum](https://github.com/patternscientist/leetcode/tree/main/0015-3sum/) | Medium |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
+| [0876-middle-of-the-linked-list](https://github.com/patternscientist/leetcode/tree/main/0876-middle-of-the-linked-list/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -213,6 +214,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/patternscientist/leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
 | [0206-reverse-linked-list](https://github.com/patternscientist/leetcode/tree/main/0206-reverse-linked-list/) | Easy |
+| [0876-middle-of-the-linked-list](https://github.com/patternscientist/leetcode/tree/main/0876-middle-of-the-linked-list/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
