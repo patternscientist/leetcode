@@ -1,12 +1,9 @@
-class Solution(object):
-    def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        end  = nums[0]
-        best = nums[0]
-        for i in range(1,len(nums)):
-            end  = max(nums[i], nums[i] + end)
-            best = max(best, end)
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        best          = nums[0]
+        bestEndingAtI = nums[0]
+        n             = len(nums)
+        for i in range(1,n):
+            bestEndingAtI = max(bestEndingAtI+nums[i],nums[i])
+            best          = max(best,bestEndingAtI)
         return best
