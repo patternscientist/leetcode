@@ -7,6 +7,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
+| [0094-binary-tree-inorder-traversal](https://github.com/patternscientist/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0155-min-stack](https://github.com/patternscientist/leetcode/tree/main/0155-min-stack/) | Medium |
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 ## Design
@@ -37,6 +38,7 @@ A collection of solutions to selected LeetCode problems.
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/patternscientist/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0098-validate-binary-search-tree](https://github.com/patternscientist/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
@@ -90,6 +92,7 @@ A collection of solutions to selected LeetCode problems.
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/patternscientist/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0098-validate-binary-search-tree](https://github.com/patternscientist/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0102-binary-tree-level-order-traversal](https://github.com/patternscientist/leetcode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
@@ -101,6 +104,7 @@ A collection of solutions to selected LeetCode problems.
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/patternscientist/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0098-validate-binary-search-tree](https://github.com/patternscientist/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0102-binary-tree-level-order-traversal](https://github.com/patternscientist/leetcode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
