@@ -32,6 +32,7 @@ A collection of solutions to selected LeetCode problems.
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0409-longest-palindrome](https://github.com/patternscientist/leetcode/tree/main/0409-longest-palindrome/) | Easy |
+| [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -46,6 +47,7 @@ A collection of solutions to selected LeetCode problems.
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0543-diameter-of-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -57,6 +59,7 @@ A collection of solutions to selected LeetCode problems.
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0994-rotting-oranges](https://github.com/patternscientist/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
@@ -73,6 +76,7 @@ A collection of solutions to selected LeetCode problems.
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0409-longest-palindrome](https://github.com/patternscientist/leetcode/tree/main/0409-longest-palindrome/) | Easy |
+| [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
@@ -120,6 +124,7 @@ A collection of solutions to selected LeetCode problems.
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
+| [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -145,6 +150,7 @@ A collection of solutions to selected LeetCode problems.
 | [0238-product-of-array-except-self](https://github.com/patternscientist/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0994-rotting-oranges](https://github.com/patternscientist/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -173,6 +179,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
+| [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
