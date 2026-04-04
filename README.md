@@ -8,6 +8,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
 | [0094-binary-tree-inorder-traversal](https://github.com/patternscientist/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
+| [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0155-min-stack](https://github.com/patternscientist/leetcode/tree/main/0155-min-stack/) | Medium |
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 ## Design
@@ -149,6 +150,7 @@ A collection of solutions to selected LeetCode problems.
 | [0056-merge-intervals](https://github.com/patternscientist/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0057-insert-interval](https://github.com/patternscientist/leetcode/tree/main/0057-insert-interval/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/patternscientist/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
@@ -208,6 +210,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
 | [0070-climbing-stairs](https://github.com/patternscientist/leetcode/tree/main/0070-climbing-stairs/) | Easy |
+| [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
