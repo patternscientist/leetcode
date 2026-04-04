@@ -12,7 +12,7 @@ public:
         int bestLen = INT_MAX;
         int bestStart = 0;
         int l = 0;
-        for (int r=0; r<m; ++r){
+        for (int r=0; r<m; r++){
             char cr = s[r];
             if (need[cr] > 0)
                 missing--;
