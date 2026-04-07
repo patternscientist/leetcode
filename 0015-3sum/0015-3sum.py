@@ -6,7 +6,7 @@ class Solution:
         for i in range(n):
             if nums[i] > 0:
                 break
-            if i > 0 and nums[i] == nums[i-1]:
+            if i > 0 and nums[i-1] == nums[i]:
                 continue
             l = i+1
             r = n-1
