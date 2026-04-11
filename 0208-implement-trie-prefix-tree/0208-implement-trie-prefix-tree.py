@@ -1,7 +1,7 @@
 class Node:
     def __init__(self):
         self.end = False
-        self.nxt = [None]*26
+        self.nxt = [None] * 26
 
 class Trie:
 
