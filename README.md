@@ -196,6 +196,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/patternscientist/leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
+| [0278-first-bad-version](https://github.com/patternscientist/leetcode/tree/main/0278-first-bad-version/) | Easy |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -247,4 +248,8 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/patternscientist/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/patternscientist/leetcode/tree/main/0235-lowest-common-ancestor-of-a-binary-search-tree/) | Medium |
+## Interactive
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0278-first-bad-version](https://github.com/patternscientist/leetcode/tree/main/0278-first-bad-version/) | Easy |
 <!---LeetCode Topics End-->
