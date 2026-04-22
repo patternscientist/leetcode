@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<vector<int>> adj(numCourses, vector<int>(0, 0));
+        vector<vector<int>> adj(numCourses);
         vector<int> indeg(numCourses,0);
         for (const vector<int>& prereq : prerequisites){
             int a_i = prereq[0];
