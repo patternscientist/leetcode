@@ -1,13 +1,12 @@
 class Solution {
 public:
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        auto d = [](const vector<int>& p){
+        const auto d = [](const vector<int>& p){
             return p[0]*p[0] + p[1]*p[1];
         };
-        nth_element(points.begin(), points.begin()+k, points.end(),
-                   [&d](const vector<int>& p, const vector<int>& q){
-                        return d(p) < d(q);
-                   });
+        sort(points.begin(), points.end(), [&d](const vector<int>& a, const vector<int>& b){
+            return d(a) < d(b);
+        });
         points.resize(k);
         return points;
     }
