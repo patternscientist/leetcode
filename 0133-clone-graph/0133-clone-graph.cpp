@@ -22,14 +22,15 @@ public:
 class Solution {
 public:
     Node* cloneGraph(Node* node) {
-        if (!node) return nullptr;
+        if (!node)
+            return nullptr;
         unordered_map<Node*,Node*> mp{{node,new Node(node->val)}};
         queue<Node*> q;
         q.push(node);
         while (!q.empty()){
             Node* cur = q.front(); q.pop();
             for (Node* neighbor : cur->neighbors){
-                if (!mp.count(neighbor)){
+                if (!mp.contains(neighbor)){
                     mp[neighbor] = new Node(neighbor->val);
                     q.push(neighbor);
                 }
