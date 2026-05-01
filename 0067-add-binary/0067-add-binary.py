@@ -15,4 +15,4 @@ class Solution:
                 j -= 1
             ans += str(sum_ & 1)
             carry = sum_ >> 1
-        return "".join(reversed(ans))
+        return ''.join(reversed(ans))
