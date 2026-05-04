@@ -166,6 +166,7 @@ A collection of solutions to selected LeetCode problems.
 | [0238-product-of-array-except-self](https://github.com/patternscientist/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0704-binary-search](https://github.com/patternscientist/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0733-flood-fill](https://github.com/patternscientist/leetcode/tree/main/0733-flood-fill/) | Easy |
 | [0973-k-closest-points-to-origin](https://github.com/patternscientist/leetcode/tree/main/0973-k-closest-points-to-origin/) | Medium |
@@ -212,6 +213,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/patternscientist/leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0278-first-bad-version](https://github.com/patternscientist/leetcode/tree/main/0278-first-bad-version/) | Easy |
+| [0704-binary-search](https://github.com/patternscientist/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0981-time-based-key-value-store](https://github.com/patternscientist/leetcode/tree/main/0981-time-based-key-value-store/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
