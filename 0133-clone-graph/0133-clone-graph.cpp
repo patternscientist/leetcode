@@ -30,7 +30,7 @@ public:
         while (!q.empty()){
             Node* cur = q.front(); q.pop();
             for (Node* neighbor : cur->neighbors){
-                if (!mp.contains(neighbor)){
+                if (!mp.count(neighbor)){
                     mp[neighbor] = new Node(neighbor->val);
                     q.push(neighbor);
                 }
