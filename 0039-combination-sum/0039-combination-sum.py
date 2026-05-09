@@ -1,19 +1,19 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        path = []
         ans  = []
+        path = []
         n    = len(candidates)
-        def dfs(candidates: List[int], start: int, remaining: int) -> None:
+        def dfs(candidates: List[int], n: int, start: int, remaining: int) -> None:
             if remaining == 0:
                 ans.append(path.copy())
+                return
+            if remaining < 0:
+                return 
             for i in range(start,n):
-                candidate = candidates[i]
-                if candidate > remaining:
-                    break
-                path.append(candidate)
-                dfs(candidates,i,remaining-candidate)
-                path.remove(candidate)
-            return 
+                path.append(candidates[i])
+                dfs(candidates,n,i,remaining-candidates[i])
+                path.remove(candidates[i])
+            return
         candidates = sorted(candidates)
-        dfs(candidates,0,target)
+        dfs(candidates,n,0,target)
         return ans
