@@ -5,7 +5,7 @@ class MyQueue:
         self.out = deque()
 
     def pour(self) -> None:
-        if len(self.out) != 0:
+        if not len(self.out) == 0:
             return
         while len(self.in_) != 0:
             self.out.append(self.in_.pop())
@@ -22,8 +22,7 @@ class MyQueue:
         return self.out[-1]
 
     def empty(self) -> bool:
-        return len(self.in_) == len(self.out) == 0
-        
+        return len(self.in_) == 0 and len(self.out) == 0
 
 
 # Your MyQueue object will be instantiated and called as such:
