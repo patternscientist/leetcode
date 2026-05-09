@@ -1,14 +1,12 @@
-class Solution(object):
-    def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        mp = {')':'(', '}':'{',']':'['}
+class Solution:
+    def isValid(self, s: str) -> bool:
+        mp = {')' : '(',
+              '}' : '{',
+              ']' : '['}
         st = deque()
-        for c in s:
-            if c == '(' or c == '{' or c == '[':
-                st.append(c)
-            elif len(st) == 0 or st.pop() != mp[c]:
+        for ch in s:
+            if not ch in mp:
+                st.append(ch)
+            elif len(st) == 0 or st.pop() != mp[ch]:
                 return False
         return len(st) == 0
