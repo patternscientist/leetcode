@@ -14,6 +14,5 @@ class Solution:
                 dfs(candidates,n,i,remaining-candidates[i])
                 path.remove(candidates[i])
             return
-        candidates = sorted(candidates)
         dfs(candidates,n,0,target)
         return ans
