@@ -1,30 +1,55 @@
 class Solution:
+    class DSU:
+        def __init__(self,n):
+            self.parent = list(range(n))
+            self.rank   = [0] * n
+        def find(self,x):
+            if self.parent[x] != x:
+                self.parent[x] = self.find(self.parent[x])
+            return self.parent[x]
+        def unite(self,x,y):
+            rootX = self.find(x)
+            rootY = self.find(y)
+            if rootX == rootY:
+                return 
+            if self.rank[rootX] > self.rank[rootY]:
+                self.parent[rootY] = rootX
+            elif self.rank[rootX] < self.rank[rootY]:
+                self.parent[rootX] = rootY
+            else:
+                self.parent[rootY] = rootX
+                self.rank[rootX] += 1
+            
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
-        mp  = {}
-        ans = []
+        emailToName = {}
+        emailToId = {}
+        id_ = 0
         for account in accounts:
-            name,rest = account[0],set(account[1:])
-            if not name in mp:
-                mp[name] = []
-                mp[name].append(rest)
-                continue
-            updatedEmails = []
-            toRemove = []
-            allDisjoint = True
-            for emails in mp[name]:
-                if not rest.isdisjoint(emails):
-                    updatedEmails.append(emails.union(rest))
-                    toRemove.append(emails)
-                    allDisjoint = False
-            sz = 0
-            for emails in toRemove:
-                mp[name].remove(emails)
-                sz += 1
-            mp[name].append(reduce(lambda s,t: s.union(t),updatedEmails[1:] if sz > 1 else set(),updatedEmails[0])
-                            if not allDisjoint else rest)
-
-        for name,emailLists in mp.items():
-            for emailList in emailLists:
-                ans.append([name]+sorted(emailList))
+            name = account[0]
+            for email in account[1:]:
+                if not email in emailToName:
+                    emailToName[email] = name
+                emailToId[email] = id_
+            id_ += 1
+        
+        dsu = self.DSU(id_)
+        for account in accounts:
+            firstEmailId = emailToId[account[1]]
+            for email in account[2:]:
+                dsu.unite(firstEmailId, emailToId[email])
+        
+        rootToEmails = {}
+        for email,emailId in emailToId.items():
+            root = dsu.find(emailId)
+            if not root in rootToEmails:
+                rootToEmails[root] = []
+            rootToEmails[root].append(email)
+        
+        ans = []
+        for root,emails in rootToEmails.items():
+            emails = tuple(sorted(emails))
+            merged = []
+            merged.append(emailToName[emails[0]])
+            merged.extend(emails)
+            ans.append(merged)
         return ans
-
