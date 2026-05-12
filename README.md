@@ -128,6 +128,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0015-3sum](https://github.com/patternscientist/leetcode/tree/main/0015-3sum/) | Medium |
 | [0042-trapping-rain-water](https://github.com/patternscientist/leetcode/tree/main/0042-trapping-rain-water/) | Hard |
+| [0075-sort-colors](https://github.com/patternscientist/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0125-valid-palindrome](https://github.com/patternscientist/leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0141-linked-list-cycle](https://github.com/patternscientist/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
@@ -137,6 +138,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0015-3sum](https://github.com/patternscientist/leetcode/tree/main/0015-3sum/) | Medium |
 | [0056-merge-intervals](https://github.com/patternscientist/leetcode/tree/main/0056-merge-intervals/) | Medium |
+| [0075-sort-colors](https://github.com/patternscientist/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/patternscientist/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
@@ -163,6 +165,7 @@ A collection of solutions to selected LeetCode problems.
 | [0053-maximum-subarray](https://github.com/patternscientist/leetcode/tree/main/0053-maximum-subarray/) | Medium |
 | [0056-merge-intervals](https://github.com/patternscientist/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0057-insert-interval](https://github.com/patternscientist/leetcode/tree/main/0057-insert-interval/) | Medium |
+| [0075-sort-colors](https://github.com/patternscientist/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
