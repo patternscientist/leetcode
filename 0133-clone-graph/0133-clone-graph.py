@@ -12,7 +12,7 @@ class Solution:
         if not node:
             return None
         mp = {node : Node(node.val)}
-        q = deque()
+        q  = deque()
         q.append(node)
         while len(q) != 0:
             cur = q.popleft()
