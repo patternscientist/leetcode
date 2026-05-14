@@ -32,6 +32,7 @@ A collection of solutions to selected LeetCode problems.
 | [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
+| [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0141-linked-list-cycle](https://github.com/patternscientist/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
@@ -83,6 +84,7 @@ A collection of solutions to selected LeetCode problems.
 | [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0125-valid-palindrome](https://github.com/patternscientist/leetcode/tree/main/0125-valid-palindrome/) | Easy |
+| [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
@@ -167,6 +169,7 @@ A collection of solutions to selected LeetCode problems.
 | [0057-insert-interval](https://github.com/patternscientist/leetcode/tree/main/0057-insert-interval/) | Medium |
 | [0075-sort-colors](https://github.com/patternscientist/leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0169-majority-element](https://github.com/patternscientist/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
@@ -185,6 +188,7 @@ A collection of solutions to selected LeetCode problems.
 | [0053-maximum-subarray](https://github.com/patternscientist/leetcode/tree/main/0053-maximum-subarray/) | Medium |
 | [0070-climbing-stairs](https://github.com/patternscientist/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
+| [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
 ## Backtracking
@@ -241,9 +245,11 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/patternscientist/leetcode/tree/main/0070-climbing-stairs/) | Easy |
+| [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
