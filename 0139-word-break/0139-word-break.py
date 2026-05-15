@@ -1,10 +1,10 @@
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         wordSet = set(wordDict)
-        maxLen  = 0
+        maxLen = 0
         for w in wordDict:
             maxLen = max(maxLen,len(w))
-        n  = len(s)
+        n = len(s)
         dp = [False] * (n+1)
         dp[0] = True
         for i in range(1,n+1):
