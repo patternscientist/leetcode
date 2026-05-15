@@ -9,7 +9,7 @@ public:
         vector<bool> dp(n+1,false);
         dp[0] = true;
         for (int i=1; i<=n; i++){
-            for (int len=1; len<=maxLen && len<=i; len++){
+            for (int len=1; len<=min(maxLen,i); len++){
                 int j = i - len;
                 if (dp[j] && wordSet.contains(s.substr(j,len))){
                     dp[i] = true;
