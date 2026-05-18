@@ -3,17 +3,14 @@ public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
         vector<vector<int>> adj(numCourses);
         vector<int> indeg(numCourses,0);
-        for (const vector<int>& prereq : prerequisites){
-            int a_i = prereq[0];
-            int b_i = prereq[1];
-            adj[b_i].push_back(a_i);
-            indeg[a_i]++;
+        for (const auto& p : prerequisites){
+            int a = p[0], b = p[1];
+            adj[b].push_back(a);
+            indeg[a]++;
         }
         queue<int> q;
-        for (int course=0; course<numCourses; course++){
-            if (indeg[course] == 0)
-                q.push(course);
-        }
+        for (int c=0; c<numCourses; c++)
+            if (indeg[c] == 0) q.push(c);
         int taken = 0;
         while (!q.empty()){
             int cur = q.front(); q.pop();
