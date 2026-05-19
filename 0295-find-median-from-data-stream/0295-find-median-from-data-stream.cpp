@@ -8,17 +8,15 @@ public:
     }
     
     void addNum(int num) {
-        if ((int)lo.size() == 0 || num <= lo.top())
+        if (lo.empty()|| num <= lo.top())
             lo.push(num);
         else
             hi.push(num);
 
-        int loSize = lo.size(), hiSize = hi.size();
-
-        if (loSize < hiSize){
+        if (lo.size() < hi.size()){
             lo.push(hi.top());
             hi.pop();
-        } else if (loSize > hiSize + 1){
+        } else if (lo.size() > hi.size() + 1){
             hi.push(lo.top());
             lo.pop();
         }
