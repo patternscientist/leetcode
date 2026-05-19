@@ -175,6 +175,7 @@ A collection of solutions to selected LeetCode problems.
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/patternscientist/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
+| [0416-partition-equal-subset-sum](https://github.com/patternscientist/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0704-binary-search](https://github.com/patternscientist/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0721-accounts-merge](https://github.com/patternscientist/leetcode/tree/main/0721-accounts-merge/) | Medium |
@@ -190,6 +191,7 @@ A collection of solutions to selected LeetCode problems.
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0322-coin-change](https://github.com/patternscientist/leetcode/tree/main/0322-coin-change/) | Medium |
+| [0416-partition-equal-subset-sum](https://github.com/patternscientist/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0542-01-matrix](https://github.com/patternscientist/leetcode/tree/main/0542-01-matrix/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
