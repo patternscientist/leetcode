@@ -15,13 +15,13 @@ class Codec:
         """
         if not root:
             return ""
-        s = ""
         q = deque()
         q.append(root)
+        s = ""
         while len(q) != 0:
             cur = q.popleft()
             if cur:
-                s += str(cur.val) + "#"
+                s += str(cur.val) + '#'
                 q.append(cur.left)
                 q.append(cur.right)
             else:
@@ -36,24 +36,23 @@ class Codec:
         """
         if len(data) == 0:
             return None
-        vals = data.split("#")[:-1]
+        vals = data.split('#')[:-1]
         root = TreeNode(int(vals[0]))
         q = deque()
         q.append(root)
-        n = len(vals)
         i = 1
-        while len(q) != 0 and i < n:
+        n = len(vals)
+        while i < n and len(q) != 0:
             cur = q.popleft()
-            if i < n and vals[i] != "n":
+            if i < n and vals[i] != 'n':
                 cur.left = TreeNode(int(vals[i]))
                 q.append(cur.left)
             i += 1
-            if i < n and vals[i] != "n":
+            if i < n and vals[i] != 'n':
                 cur.right = TreeNode(int(vals[i]))
                 q.append(cur.right)
             i += 1
         return root
-
         
 
 # Your Codec object will be instantiated and called as such:
