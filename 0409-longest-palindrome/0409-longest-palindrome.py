@@ -1,9 +1,9 @@
 class Solution:
     def longestPalindrome(self, s: str) -> int:
         ans = 0
-        count = [0] * 60
+        count = [0] * 58
         for ch in s:
-            count[ord(ch)-ord('a')] += 1
+            count[ord(ch)-ord('A')] += 1
         hasOdd = False
         for x in count:
             ans += (x // 2) * 2
