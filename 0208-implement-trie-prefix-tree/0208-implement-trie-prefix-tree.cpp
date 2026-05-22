@@ -1,15 +1,11 @@
-
 class Trie {
-public:
-    class Node {
-        public:
+    struct Node{
         bool end = false;
-        array<Node*,26> nxt{};
-        Node() = default;
+        array<Node*,26> next{};
+        Node(){};
     };
-
+public:
     Node* root;
-
     Trie() {
         root = new Node();
     }
@@ -18,9 +14,9 @@ public:
         Node* cur = root;
         for (char ch : word){
             int i = ch-'a';
-            if (!cur->nxt[i])
-                cur->nxt[i] = new Node();
-            cur = cur->nxt[i];
+            if (!cur->next[i])
+                cur->next[i] = new Node();
+            cur = cur->next[i];
         }
         cur->end = true;
     }
@@ -29,9 +25,9 @@ public:
         Node* cur = root;
         for (char ch : word){
             int i = ch-'a';
-            if (!cur->nxt[i])
+            if (!cur->next[i])
                 return false;
-            cur = cur->nxt[i];
+            cur = cur->next[i];
         }
         return cur->end;
     }
@@ -40,9 +36,9 @@ public:
         Node* cur = root;
         for (char ch : prefix){
             int i = ch-'a';
-            if (!cur->nxt[i])
+            if (!cur->next[i])
                 return false;
-            cur = cur->nxt[i];
+            cur = cur->next[i];
         }
         return true;
     }
