@@ -23,6 +23,5 @@ class Solution:
             if ans > ((MAX - digit)//10):
                 return MAX if sign == 1 else MIN
             ans = ans * 10 + digit
-            print('new ans:', ans)
             i += 1
         return sign * ans
