@@ -4,8 +4,8 @@ public:
         int n = (int)nums.size();
         int l = 0;
         int r = n-1;
-        while (l <= r){
-            int mid = l + (r-l) / 2;
+        while (l<=r){
+            int mid = l+(r-l)/2;
             if (nums[mid] == target)
                 return mid;
             if (nums[l] <= nums[mid]){
