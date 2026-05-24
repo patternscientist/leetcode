@@ -7,15 +7,13 @@ public:
         int rMin = 0, rMax = m-1;
         int cMin = 0, cMax = n-1;
         while (rMin <= rMax && cMin <= cMax){
-            for (int c=cMin; c<=cMax; c++){
+            for (int c=cMin; c<=cMax; c++)
                 ans.push_back(matrix[rMin][c]);
-            }
             rMin++;
             if (rMin > rMax)
                 break;
-            for (int r=rMin; r<=rMax; r++){
+            for (int r=rMin; r<=rMax; r++)
                 ans.push_back(matrix[r][cMax]);
-            }
             cMax--;
             if (cMin > cMax)
                 break;
