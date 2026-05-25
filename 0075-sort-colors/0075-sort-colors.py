@@ -12,12 +12,12 @@ class Solution:
                 tmp       = nums[mid]
                 nums[mid] = nums[low]
                 nums[low] = tmp
-                low      += 1
-                mid      += 1
+                low += 1
+                mid += 1
             elif nums[mid] == 1:
                 mid += 1
             else:
                 tmp        = nums[mid]
                 nums[mid]  = nums[high]
                 nums[high] = tmp
-                high      -= 1
+                high -= 1
