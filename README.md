@@ -170,6 +170,7 @@ A collection of solutions to selected LeetCode problems.
 | [0056-merge-intervals](https://github.com/patternscientist/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0057-insert-interval](https://github.com/patternscientist/leetcode/tree/main/0057-insert-interval/) | Medium |
 | [0075-sort-colors](https://github.com/patternscientist/leetcode/tree/main/0075-sort-colors/) | Medium |
+| [0078-subsets](https://github.com/patternscientist/leetcode/tree/main/0078-subsets/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/patternscientist/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
@@ -200,6 +201,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/patternscientist/leetcode/tree/main/0039-combination-sum/) | Medium |
 | [0046-permutations](https://github.com/patternscientist/leetcode/tree/main/0046-permutations/) | Medium |
+| [0078-subsets](https://github.com/patternscientist/leetcode/tree/main/0078-subsets/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -276,6 +278,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
+| [0078-subsets](https://github.com/patternscientist/leetcode/tree/main/0078-subsets/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
