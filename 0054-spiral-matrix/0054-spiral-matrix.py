@@ -1,6 +1,7 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-        m,n = len(matrix),len(matrix[0])
+        m = len(matrix)
+        n = len(matrix[0])
         rMin,rMax = 0,m-1
         cMin,cMax = 0,n-1
         ans = []
