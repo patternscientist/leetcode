@@ -1,28 +1,28 @@
 class MyQueue:
 
     def __init__(self):
-        self.in_ = deque()
-        self.out = deque()
+        self.front = deque()
+        self.back  = deque()
 
     def pour(self) -> None:
-        if not len(self.out) == 0:
-            return
-        while len(self.in_) != 0:
-            self.out.append(self.in_.pop())
+        if len(self.front) != 0:
+            return 
+        while len(self.back) != 0:
+            self.front.append(self.back.pop())
 
     def push(self, x: int) -> None:
-        self.in_.append(x)
+        self.back.append(x)
 
     def pop(self) -> int:
         self.pour()
-        return self.out.pop()
+        return self.front.pop()
 
     def peek(self) -> int:
         self.pour()
-        return self.out[-1]
+        return self.front[-1]
 
     def empty(self) -> bool:
-        return len(self.in_) == 0 and len(self.out) == 0
+        return len(self.front) == len(self.back) == 0
 
 
 # Your MyQueue object will be instantiated and called as such:
