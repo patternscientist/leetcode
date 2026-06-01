@@ -11,7 +11,7 @@ class Solution:
             l = i+1
             r = n-1
             while l < r:
-                s = nums[i] + nums[l] + nums[r]
+                s = nums[i]+nums[l]+nums[r]
                 if s == 0:
                     ans.append([nums[i],nums[l],nums[r]])
                     l += 1
