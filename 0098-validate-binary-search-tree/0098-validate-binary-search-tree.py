@@ -6,11 +6,12 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        def dfs(root : Optional[TreeNode], exclusiveLow : int, exclusiveHigh : int) -> bool:
-            if not root: return True 
-            if root.val <= exclusiveLow or root.val >= exclusiveHigh:
+        MIN = -2**31-1
+        MAX = 2**31+2
+        def isValid(root: Optional[TreeNode],MIN: int,MAX: int) -> bool:
+            if not root:
+                return True
+            if root.val <= MIN or root.val >= MAX:
                 return False
-            return dfs(root.left,exclusiveLow,root.val) and dfs(root.right,root.val,exclusiveHigh)
-        exclusiveLow  = -2**31-1
-        exclusiveHigh = 2**31
-        return dfs(root,exclusiveLow,exclusiveHigh)
+            return isValid(root.left,MIN,root.val) and isValid(root.right,root.val,MAX)
+        return isValid(root,MIN,MAX)
