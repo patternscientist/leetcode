@@ -12,12 +12,10 @@ public:
             i++;
         }
         int ans = 0;
-        int MAX = INT_MAX;
-        int MIN = INT_MIN;
         while (i < n && isdigit(s[i])){
             int digit = s[i]-'0';
             if ((INT_MAX - digit) / 10 < ans)
-                return sign == 1 ? MAX : MIN;
+                return sign == 1 ? INT_MAX : INT_MIN;
             ans = ans * 10 + digit;
             i++;
         }
