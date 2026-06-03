@@ -2,7 +2,7 @@ class Solution:
     def trap(self, height: List[int]) -> int:
         n = len(height)
         l,r = 0,n-1
-        leftMax,rightMax = 0,0
+        leftMax, rightMax = 0,0
         ans = 0
         while l < r:
             leftMax  = max(leftMax,height[l])
