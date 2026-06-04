@@ -4,7 +4,7 @@ class Solution:
         if total % 2 == 1:
             return False
         target = total // 2
-        dp = [False] * (target+1)
+        dp = [False] * (target + 1)
         dp[0] = True
         for x in nums:
             for s in range(target,x-1,-1):
