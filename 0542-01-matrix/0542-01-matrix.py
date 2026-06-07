@@ -8,16 +8,17 @@ class Solution:
                 if mat[r][c] == 0:
                     dist[r][c] = 0
                     q.append((r,c))
-        dr = (0,1,0,-1)
-        dc = (1,0,-1,0)
+        dr = [-1,0,1,0]
+        dc = [0,1,0,-1]
         while len(q) != 0:
-            r,c = q.popleft()
+            (r,c) = q.popleft()
             for k in range(4):
-                nr = r+dr[k]
-                nc = c+dc[k]
+                nr = r + dr[k]
+                nc = c + dc[k]
                 if (0 <= nr and nr < m and
                     0 <= nc and nc < n and
                     dist[nr][nc] == -1):
                     dist[nr][nc] = dist[r][c]+1
                     q.append((nr,nc))
         return dist
+            
