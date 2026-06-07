@@ -10,15 +10,12 @@ public:
         if (wordSet.contains(beginWord))
             wordSet.erase(beginWord);
         while (!q.empty()){
-            auto [word, dist] = q.front();
+            auto [word,dist] = q.front();
             q.pop();
-
-            if (word == endWord)
+            if (word == endWord)    
                 return dist;
-
             for (int i=0; i<(int)word.size(); i++){
-                char original = word[i];
-
+                char og = word[i];  
                 for (char ch='a'; ch<='z'; ch++){
                     word[i] = ch;
                     if (wordSet.contains(word)){
@@ -26,8 +23,7 @@ public:
                         wordSet.erase(word);
                     }
                 }
-
-                word[i] = original;
+                word[i] = og;
             }
         }
         return 0;
