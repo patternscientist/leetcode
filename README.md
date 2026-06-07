@@ -31,6 +31,7 @@ A collection of solutions to selected LeetCode problems.
 | [0001-two-sum](https://github.com/patternscientist/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0003-longest-substring-without-repeating-characters](https://github.com/patternscientist/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
+| [0127-word-ladder](https://github.com/patternscientist/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0141-linked-list-cycle](https://github.com/patternscientist/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
@@ -62,6 +63,7 @@ A collection of solutions to selected LeetCode problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/patternscientist/leetcode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
+| [0127-word-ladder](https://github.com/patternscientist/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0133-clone-graph](https://github.com/patternscientist/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/patternscientist/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0200-number-of-islands](https://github.com/patternscientist/leetcode/tree/main/0200-number-of-islands/) | Medium |
@@ -88,6 +90,7 @@ A collection of solutions to selected LeetCode problems.
 | [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
 | [0076-minimum-window-substring](https://github.com/patternscientist/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0125-valid-palindrome](https://github.com/patternscientist/leetcode/tree/main/0125-valid-palindrome/) | Easy |
+| [0127-word-ladder](https://github.com/patternscientist/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
