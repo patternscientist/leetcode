@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        mp = {')' : '(',
+        mp = {')' :'(',
               '}' : '{',
               ']' : '['}
         st = deque()
