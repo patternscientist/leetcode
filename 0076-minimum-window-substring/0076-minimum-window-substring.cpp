@@ -1,35 +1,35 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        int m = s.size();
-        int n = t.size();
+        int m = (int)s.size();
+        int n = (int)t.size();
         if (m < n)
             return "";
-        int need[128];
+        int need[58];
         for (char ch : t)
-            need[ch]++;
+            need[ch-'A']++;
         int missing = n;
-        int bestLen = INT_MAX;
         int bestStart = 0;
+        int bestLen = INT_MAX;
         int l = 0;
         for (int r=0; r<m; r++){
             char cr = s[r];
-            if (need[cr] > 0)
+            if (need[cr-'A'] > 0)
                 missing--;
-            need[cr]--;
+            need[cr-'A']--;
             while (missing == 0){
-                int winLen = r-l+1;
-                if (winLen < bestLen){
-                    bestLen = winLen;
+                int len = r-l+1;
+                if (len < bestLen){
+                    bestLen = len;
                     bestStart = l;
                 }
-                char cl = s[l];
-                need[cl]++;
-                if (need[cl] > 0)
+                int cl = s[l];
+                need[cl-'A']++;
+                if (need[cl-'A'] > 0)
                     missing++;
                 l++;
             }
         }
-        return bestLen == INT_MAX ? "" : s.substr(bestStart,bestLen);
+        return (bestLen == INT_MAX) ? "" : s.substr(bestStart,bestLen);
     }
 };
