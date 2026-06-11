@@ -1,10 +1,9 @@
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
-        sign = lambda x: 1 if x == 0 else x // abs(x)
         ops = {"+" : lambda x,y: x+y,
                "-" : lambda x,y: x-y,
                "*" : lambda x,y: x*y,
-               "/" : lambda x,y: (sign(x) * sign(y)) * (abs(x) // abs(y))}
+               "/" : lambda x,y: floor(x/y) if x*y > 0 else ceil(x/y)}
         st = deque()
         for token in tokens:
             if token in ops:
@@ -13,4 +12,4 @@ class Solution:
                 st.append(ops[token](n1,n2))
             else:
                 st.append(int(token))
-        return st[-1]
+        return st[0]
