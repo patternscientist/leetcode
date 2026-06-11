@@ -8,10 +8,8 @@ public:
         for (const auto& interval : intervals){
             if (merged.empty() || merged.back()[1] < interval[0])
                 merged.push_back(interval);
-            else{
-                merged.back()[0] = min(merged.back()[0], interval[0]);
+            else
                 merged.back()[1] = max(merged.back()[1], interval[1]);
-            }
         }
         return merged;
     }
