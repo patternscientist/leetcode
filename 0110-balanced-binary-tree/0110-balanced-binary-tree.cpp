@@ -12,8 +12,10 @@
 class Solution {
 public:
     int heightOrFail(TreeNode* root){
-        if (!root)
+        if (!root) 
             return -1;
+        if (!root->left && !root->right)
+            return 0;
         int lh = heightOrFail(root->left);
         if (lh == -2)
             return -2;
@@ -22,9 +24,8 @@ public:
             return -2;
         if (abs(lh-rh) > 1)
             return -2;
-        return max(lh,rh)+1;
+        return 1+max(lh,rh);
     }
-    
     bool isBalanced(TreeNode* root) {
         return heightOrFail(root) != -2;
     }
