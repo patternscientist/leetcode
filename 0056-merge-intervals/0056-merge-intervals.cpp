@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        sort(intervals.begin(),intervals.end(),[](const vector<int> x, const vector<int> y){
+        sort(intervals.begin(),intervals.end(),[](const vector<int>& x, const vector<int>& y){
             return x[0] < y[0];
         });
         vector<vector<int>> merged;
