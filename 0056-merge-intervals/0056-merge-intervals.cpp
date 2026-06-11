@@ -6,12 +6,11 @@ public:
         });
         vector<vector<int>> merged;
         for (int i=0; i<(int)intervals.size(); i++){
-            vector<int> interval = intervals[i];
-            if (merged.empty() || merged.back()[1] < interval[0])
-                merged.push_back(interval);
+            if (merged.empty() || merged.back()[1] < intervals[i][0])
+                merged.push_back(intervals[i]);
             else{
-                merged.back()[0] = min(merged.back()[0], interval[0]);
-                merged.back()[1] = max(merged.back()[1], interval[1]);
+                merged.back()[0] = min(merged.back()[0], intervals[i][0]);
+                merged.back()[1] = max(merged.back()[1], intervals[i][1]);
             }
         }
         return merged;
