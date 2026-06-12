@@ -1,22 +1,18 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        n         = len(s)
+        n = len(s)
+        best = 0
         bestStart = 0
-        bestLen   = 1
-
-        def expand(l: int, r: int, bestStart: int, bestLen: int) -> (int,int):
+        def expand(l,r,best,bestStart):
             while l >= 0 and r < n and s[l] == s[r]:
                 l -= 1
                 r += 1
-            start  = l+1
             length = r-l-1
-            if length > bestLen:
-                bestStart = start
-                bestLen = length
-            return (bestStart,bestLen)
-            
+            if length > best:
+                best      = length
+                bestStart = l+1
+            return (best,bestStart)
         for i in range(n):
-            bestStart, bestLen = expand(i,i,bestStart,bestLen)
-            bestStart, bestLen = expand(i,i+1,bestStart,bestLen)
-        
-        return s[bestStart:bestStart+bestLen]
+            (best,bestStart) = expand(i,i,best,bestStart)
+            (best,bestStart) = expand(i,i+1,best,bestStart)
+        return s[bestStart:bestStart+best]
