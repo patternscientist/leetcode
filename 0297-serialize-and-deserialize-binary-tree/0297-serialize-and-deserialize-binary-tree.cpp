@@ -18,9 +18,10 @@ public:
         queue<TreeNode*> q;
         q.push(root);
         while (!q.empty()){
-            TreeNode* cur = q.front(); q.pop();
+            TreeNode* cur = q.front();
+            q.pop();
             if (cur){
-                s += to_string(cur->val) + '#';
+                s += (to_string(cur->val) + '#');
                 q.push(cur->left);
                 q.push(cur->right);
             } else 
@@ -33,29 +34,30 @@ public:
     TreeNode* deserialize(string data) {
         if (data.empty())
             return nullptr;
+        vector<string> tokens;
         string token;
-        vector<string> vals;
         for (char ch : data){
             if (ch == '#'){
-                vals.push_back(token);
+                tokens.push_back(token);
                 token.clear();
-            } else
+            } else 
                 token.push_back(ch);
         }
-        TreeNode* root = new TreeNode(stoi(vals[0]));
+        TreeNode* root = new TreeNode(stoi(tokens[0]));
         queue<TreeNode*> q;
         q.push(root);
         int i = 1;
-        int n = vals.size();
+        int n = (int)tokens.size();
         while (i < n && !q.empty()){
-            TreeNode* cur = q.front(); q.pop();
-            if (i < n && vals[i] != "n"){
-                cur->left = new TreeNode(stoi(vals[i]));
+            TreeNode* cur = q.front();
+            q.pop();
+            if (i < n && tokens[i] != "n"){
+                cur->left = new TreeNode(stoi(tokens[i]));
                 q.push(cur->left);
             }
             i++;
-            if (i < n && vals[i] != "n"){
-                cur->right = new TreeNode(stoi(vals[i]));
+            if (i < n && tokens[i] != "n"){
+                cur->right = new TreeNode(stoi(tokens[i]));
                 q.push(cur->right);
             }
             i++;
