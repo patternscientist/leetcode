@@ -1,10 +1,11 @@
 (define/contract (max-sub-array nums)
   (-> (listof exact-integer?) exact-integer?)
-  (for/fold ([best (first nums)]
-             [end (first nums)]
-             #:result best)
-            ([num (rest nums)])
-        (let* ([endNew (max num (+ num end))]
-               [bestNew (max best endNew)])
-            (values bestNew endNew)))
+    (define first-num (first nums))
+    (for/fold ([best first-num]
+               [ending-here first-num]
+               #:result best)
+               ([x (in-list (rest nums))])
+            (define next-ending (max x (+ x ending-here)))
+            (define next-best (max best next-ending))
+            (values next-best next-ending))
   )
