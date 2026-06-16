@@ -1,5 +1,5 @@
 (define/contract (max-sub-array nums)
-  (-> (listof exact-integer?) exact-integer?)
+  (-> (cons/c exact-integer? (listof exact-integer?)) exact-integer?)
     (define first-num (first nums))
     (for/fold ([best first-num]
                [ending-here first-num]
