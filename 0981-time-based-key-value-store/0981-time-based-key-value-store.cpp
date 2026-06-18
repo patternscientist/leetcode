@@ -1,8 +1,9 @@
 class TimeMap {
 public:
-    unordered_map<string,vector<pair<int,string>>> mp;
+    unordered_map<string, vector<pair<int,string>>> mp;
 
     TimeMap() {
+        
     }
     
     void set(string key, string value, int timestamp) {
@@ -10,23 +11,22 @@ public:
     }
     
     string get(string key, int timestamp) {
-        auto it = mp.find(key);
-        if (it == mp.end())
+        if (!mp.contains(key))
             return "";
-        const auto& vec = it->second;
-        int n = vec.size();
+        auto it = mp.find(key);
+        auto& vec = it->second;
         int l = 0;
-        int r = n-1;
+        int r = (int)vec.size()-1;
         int ans = -1;
-        while (l<=r){
+        while (l <= r){
             int mid = l + (r-l) / 2;
             if (vec[mid].first <= timestamp){
                 ans = mid;
-                l = mid + 1;
+                l   = mid+1;
             } else 
-                r = mid - 1;
+                r   = mid-1;
         }
-        return ans == -1 ? "" : vec[ans].second;
+        return (ans == -1) ? "" : vec[ans].second;
     }
 };
 
