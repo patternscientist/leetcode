@@ -9,11 +9,11 @@ public:
         int wordLen = (int)beginWord.size();
         while (!q.empty()){
             auto [word,dist] = q.front();
+            q.pop();
             if (word == endWord)
                 return dist;
-            q.pop();
             for (int i=0; i<wordLen; i++){
-                int ogChar = word[i];
+                char ogChar = word[i];
                 for (char c='a'; c<='z'; c++){
                     word[i] = c;
                     if (wordSet.contains(word)){
