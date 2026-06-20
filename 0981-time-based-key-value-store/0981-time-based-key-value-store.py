@@ -11,18 +11,18 @@ class TimeMap:
     def get(self, key: str, timestamp: int) -> str:
         if not key in self.mp:
             return ""
-        lst    = self.mp[key]
-        l      = 0
-        r      = len(lst)-1
-        ansIdx = -1
+        lst = self.mp[key]
+        l = 0
+        r = len(lst)-1
+        ans = -1
         while l <= r:
-            mid = (l+r)//2
+            mid = (l+r) // 2
             if lst[mid][0] <= timestamp:
-                ansIdx = mid
-                l      = mid+1
+                ans = mid
+                l = mid+1
             else:
-                r      = mid-1
-        return "" if ansIdx == -1 else lst[ansIdx][1]
+                r = mid-1
+        return "" if ans == -1 else lst[ans][1]
 
 
 # Your TimeMap object will be instantiated and called as such:
