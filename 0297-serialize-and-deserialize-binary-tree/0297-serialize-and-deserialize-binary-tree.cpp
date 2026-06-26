@@ -21,7 +21,7 @@ public:
             TreeNode* cur = q.front();
             q.pop();
             if (cur){
-                s += (to_string(cur->val) + '#');
+                s += (to_string(cur->val) + "#");
                 q.push(cur->left);
                 q.push(cur->right);
             } else 
@@ -47,7 +47,7 @@ public:
         queue<TreeNode*> q;
         q.push(root);
         int i = 1;
-        int n = (int)tokens.size();
+        int n = (int)data.size();
         while (i < n && !q.empty()){
             TreeNode* cur = q.front();
             q.pop();
