@@ -1,26 +1,26 @@
-class Node:
-    def __init__(self):
-        self.end = False
-        self.nxt = [None] * 26
-
 class Trie:
+    class Node: 
+        def __init__(self):
+            self.end = False
+            self.nxt = [None] * 26
 
     def __init__(self):
-        self.root = Node()
+        self.root = self.Node()
 
     def insert(self, word: str) -> None:
         cur = self.root
         for ch in word:
             i = ord(ch)-ord('a')
             if not cur.nxt[i]:
-                cur.nxt[i] = Node()
+                cur.nxt[i] = self.Node()
             cur = cur.nxt[i]
         cur.end = True
+            
 
     def search(self, word: str) -> bool:
         cur = self.root
         for ch in word:
-            i = ord(ch)-ord('a')
+            i = ord(ch)-ord('a')       
             if not cur.nxt[i]:
                 return False
             cur = cur.nxt[i]
