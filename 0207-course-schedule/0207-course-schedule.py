@@ -7,15 +7,15 @@ class Solution:
             adj[b].append(a)
             indeg[a] += 1
         q = deque()
-        for course in range(numCourses):
-            if indeg[course] == 0:
-                q.append(course)
+        for c in range(numCourses):
+            if indeg[c] == 0:
+                q.append(c)
         taken = 0
         while len(q) != 0:
             cur = q.popleft()
             taken += 1
-            for neighbor in adj[cur]:
-                indeg[neighbor] -= 1
-                if indeg[neighbor] == 0:
-                    q.append(neighbor)
+            for other in adj[cur]:
+                indeg[other] -= 1
+                if indeg[other] == 0:
+                    q.append(other)
         return taken == numCourses
