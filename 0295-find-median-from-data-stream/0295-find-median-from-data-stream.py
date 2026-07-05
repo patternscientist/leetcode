@@ -11,14 +11,15 @@ class MedianFinder:
             heappush(self.hi,num)
         
         if len(self.lo) > len(self.hi) + 1:
-            heappush(self.hi,heappop_max(self.lo))
-        elif len(self.hi) > len(self.lo):
-            heappush_max(self.lo,heappop(self.hi))
+            heappush(self.hi, heappop_max(self.lo))
+        elif len(self.lo) < len(self.hi):
+            heappush_max(self.lo, heappop(self.hi))
+
 
     def findMedian(self) -> float:
         if len(self.lo) > len(self.hi):
             return self.lo[0]
-        return (self.lo[0] + self.hi[0]) / 2.0
+        return (self.lo[0] + self.hi[0]) / 2
 
 
 # Your MedianFinder object will be instantiated and called as such:
