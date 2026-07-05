@@ -6,22 +6,22 @@ public:
             wordSet.erase(beginWord);
         queue<pair<string,int>> q;
         q.push({beginWord,1});
-        int wordLen = (int)beginWord.size();
+        int wordSize = (int)beginWord.size();
         while (!q.empty()){
             auto [word,dist] = q.front();
             q.pop();
             if (word == endWord)
                 return dist;
-            for (int i=0; i<wordLen; i++){
-                char ogChar = word[i];
-                for (char c='a'; c<='z'; c++){
-                    word[i] = c;
+            for (int i=0; i<wordSize; i++){
+                char og = word[i];
+                for (int ch='a'; ch<='z'; ch++){
+                    word[i] = ch;
                     if (wordSet.contains(word)){
                         wordSet.erase(word);
                         q.push({word,dist+1});
                     }
-                }
-                word[i] = ogChar;
+                }            
+                word[i] = og;
             }
         }
         return 0;
