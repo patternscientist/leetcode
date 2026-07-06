@@ -24,17 +24,19 @@ public:
     Node* cloneGraph(Node* node) {
         if (!node)
             return nullptr;
-        unordered_map<Node*,Node*> mp{{node,new Node(node->val)}};
+        unordered_map<Node*,Node*> mp;
+        mp[node] = new Node(node->val);
         queue<Node*> q;
         q.push(node);
         while (!q.empty()){
-            Node* cur = q.front(); q.pop();
-            for (Node* neighbor : cur->neighbors){
-                if (!mp.count(neighbor)){
-                    mp[neighbor] = new Node(neighbor->val);
-                    q.push(neighbor);
+            Node* cur = q.front();
+            q.pop();
+            for (Node* nb : cur->neighbors){
+                if (!mp.contains(nb)){
+                    mp[nb] = new Node(nb->val);
+                    q.push(nb);
                 }
-                mp[cur]->neighbors.push_back(mp[neighbor]);
+                mp[cur]->neighbors.push_back(mp[nb]);
             }
         }
         return mp[node];
