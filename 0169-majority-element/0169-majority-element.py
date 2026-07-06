@@ -1,13 +1,13 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        n = len(nums)
-        candidate = 0
-        count = 0
-        for num in nums:
-            if count == 0:
-                candidate = num
-            if num == candidate:
-                count += 1
+        cnt = 1
+        cur = nums[0]
+        for num in nums[1:]:
+            if num == cur:
+                cnt += 1
             else:
-                count -= 1
-        return candidate
+                cnt -= 1
+                if cnt < 0:
+                    cnt = 1
+                    cur = num
+        return cur
