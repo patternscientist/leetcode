@@ -12,20 +12,20 @@ public:
     string get(string key, int timestamp) {
         if (!mp.contains(key))
             return "";
-        auto it = mp.find(key);
-        auto& vec = it->second;
+        auto& vec = mp[key];
+        int n = (int)vec.size();
         int l = 0;
-        int r = (int)vec.size()-1;
-        int ans = -1;
+        int r = n-1;
+        int idx = -1;
         while (l <= r){
-            int mid = l+(r-l)/2;
+            int mid = l + (r-l) / 2;
             if (vec[mid].first <= timestamp){
-                ans = mid;
+                idx = mid;
                 l   = mid+1;
             } else 
-                r = mid-1;
+                r   = mid-1;
         }
-        return ans == -1 ? "" : vec[ans].second;
+        return (idx == -1) ? "" : vec[idx].second;
     }
 };
 
