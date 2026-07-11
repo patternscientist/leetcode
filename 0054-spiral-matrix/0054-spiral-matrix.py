@@ -2,9 +2,11 @@ class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         m = len(matrix)
         n = len(matrix[0])
-        rMin,rMax = 0,m-1
-        cMin,cMax = 0,n-1
-        ans = []
+        rMin = 0
+        cMin = 0
+        rMax = m-1
+        cMax = n-1
+        ans  = []
         while rMin <= rMax and cMin <= cMax:
             for c in range(cMin,cMax+1):
                 ans.append(matrix[rMin][c])
