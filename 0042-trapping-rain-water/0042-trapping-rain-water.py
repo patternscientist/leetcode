@@ -7,7 +7,7 @@ class Solution:
         rightMax = 0
         ans = 0
         while l < r:
-            leftMax  = max(leftMax,height[l])
+            leftMax = max(leftMax,height[l])
             rightMax = max(rightMax,height[r])
             if leftMax <= rightMax:
                 ans += leftMax - height[l]
