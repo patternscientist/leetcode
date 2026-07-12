@@ -3,7 +3,7 @@ class Trie:
         def __init__(self):
             self.end = False
             self.nxt = [None] * 26
-
+    
     def __init__(self):
         self.root = self.Node()
 
