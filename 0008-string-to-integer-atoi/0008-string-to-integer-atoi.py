@@ -18,7 +18,6 @@ class Solution:
         while i < n and s[i].isdigit():
             digit = int(s[i])
             if ans > (MAX - digit) / 10:
-                print('dfafdsaf')
                 return MAX if sign == 1 else MIN
             ans = ans * 10 + digit
             i += 1
