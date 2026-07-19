@@ -12,16 +12,16 @@ class TimeMap:
         if not key in self.mp:
             return ""
         lst = self.mp[key]
-        l = 0
-        r = len(lst)-1
+        l   = 0
+        r   = len(lst)-1
         idx = -1
         while l <= r:
             mid = (l + r) // 2
             if lst[mid][0] <= timestamp:
                 idx = mid
-                l = mid+1
+                l   = mid+1
             else:
-                r = mid-1
+                r   = mid-1
         return "" if idx == -1 else lst[idx][1]
 
 
