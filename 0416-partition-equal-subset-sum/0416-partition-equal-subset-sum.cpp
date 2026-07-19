@@ -6,8 +6,8 @@ public:
             total += x;
         if (total % 2 == 1)
             return false;
-        int target = total/2;
-        vector<int> dp(target+1,false);
+        int target = total / 2;
+        vector<bool> dp(target+1,false);
         dp[0] = true;
         for (int x : nums){
             for (int s=target; s>=x; s--)
