@@ -1,15 +1,14 @@
 class Trie {
-
-public:
     struct Node{
         bool end = false;
         array<Node*,26> nxt{};
-        Node() = default;
+        Node() = default; 
     };
-
+public:
     Node* root = new Node();
 
     Trie() {
+        
     }
     
     void insert(string word) {
