@@ -5,7 +5,6 @@ public:
         int maxLen = 0;
         for (const string& word : wordDict)
             maxLen = max(maxLen, (int)word.size());
-        cout << "maxLen: " << maxLen << endl;
         int n = (int)s.size(); // length of string
         vector<bool> dp(n+1,false);
         dp[0] = true;
