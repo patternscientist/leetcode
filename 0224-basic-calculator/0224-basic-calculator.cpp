@@ -1,9 +1,8 @@
 class Solution {
 public:
-    int parse(const string& s, int& i){
+    int parse(const string& s, int& n, int& i){
         long long ans = 0;
         int sign = 1;
-        int n = (int)s.size();
         while (i < n){
             if (s[i] == ' ')
                 i++;
@@ -23,7 +22,7 @@ public:
                 sign = 1;
             } else if (s[i] == '('){
                 i++;
-                int value = parse(s,i);
+                int value = parse(s,n,i);
                 ans += sign * value;
                 sign = 1;
             } else if (s[i] == ')'){
@@ -35,6 +34,7 @@ public:
     }
     int calculate(string s) {
         int i = 0;
-        return parse(s,i);
+        int n = (int)s.size();
+        return parse(s,n,i);
     }
 };
