@@ -11,6 +11,7 @@ A collection of solutions to selected LeetCode problems.
 | [0094-binary-tree-inorder-traversal](https://github.com/patternscientist/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0155-min-stack](https://github.com/patternscientist/leetcode/tree/main/0155-min-stack/) | Medium |
+| [0224-basic-calculator](https://github.com/patternscientist/leetcode/tree/main/0224-basic-calculator/) | Hard |
 | [0232-implement-queue-using-stacks](https://github.com/patternscientist/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 ## Design
 | Problem Name | Difficulty |
@@ -93,6 +94,7 @@ A collection of solutions to selected LeetCode problems.
 | [0127-word-ladder](https://github.com/patternscientist/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0139-word-break](https://github.com/patternscientist/leetcode/tree/main/0139-word-break/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/patternscientist/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0224-basic-calculator](https://github.com/patternscientist/leetcode/tree/main/0224-basic-calculator/) | Hard |
 | [0242-valid-anagram](https://github.com/patternscientist/leetcode/tree/main/0242-valid-anagram/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/patternscientist/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0383-ransom-note](https://github.com/patternscientist/leetcode/tree/main/0383-ransom-note/) | Easy |
@@ -257,6 +259,7 @@ A collection of solutions to selected LeetCode problems.
 | [0067-add-binary](https://github.com/patternscientist/leetcode/tree/main/0067-add-binary/) | Easy |
 | [0070-climbing-stairs](https://github.com/patternscientist/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0150-evaluate-reverse-polish-notation](https://github.com/patternscientist/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
+| [0224-basic-calculator](https://github.com/patternscientist/leetcode/tree/main/0224-basic-calculator/) | Hard |
 | [0973-k-closest-points-to-origin](https://github.com/patternscientist/leetcode/tree/main/0973-k-closest-points-to-origin/) | Medium |
 ## Memoization
 | Problem Name | Difficulty |
@@ -284,6 +287,7 @@ A collection of solutions to selected LeetCode problems.
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/patternscientist/leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
 | [0206-reverse-linked-list](https://github.com/patternscientist/leetcode/tree/main/0206-reverse-linked-list/) | Easy |
+| [0224-basic-calculator](https://github.com/patternscientist/leetcode/tree/main/0224-basic-calculator/) | Hard |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
