@@ -1,20 +1,21 @@
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
-        m,n = len(grid),len(grid[0])
-        q = deque()
+        m = len(grid)
+        n = len(grid[0])
         fresh = 0
+        q = deque()
         for r in range(m):
             for c in range(n):
                 if grid[r][c] == 2:
                     q.append((r,c))
                 elif grid[r][c] == 1:
                     fresh += 1
-        dr = [-1,0,1,0]
-        dc = [0,1,0,-1]
+        dr = (0,-1,0,1)
+        dc = (-1,0,1,0)
         minutes = 0
         while len(q) != 0:
+            madeRotten = False
             sz = len(q)
-            madeRotten = False 
             for _ in range(sz):
                 (r,c) = q.popleft()
                 for k in range(4):
@@ -29,4 +30,4 @@ class Solution:
                         madeRotten = True
             if madeRotten:
                 minutes += 1
-        return -1 if fresh != 0 else minutes
+        return minutes if fresh == 0 else -1
