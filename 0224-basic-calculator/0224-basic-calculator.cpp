@@ -1,6 +1,7 @@
 class Solution {
 public:
-    int parse(const string& s, int& n, int& i){
+    int parse(const string& s, int& i){
+        int n = (int)s.size();
         long long ans = 0;
         int sign = 1;
         while (i < n){
@@ -14,7 +15,7 @@ public:
                 i++;
             } else if (isdigit(s[i])){
                 long long num = 0;
-                while (i < n and isdigit(s[i])){
+                while (i < n && isdigit(s[i])){
                     num = num * 10 + (s[i]-'0');
                     i++;
                 }
@@ -22,10 +23,10 @@ public:
                 sign = 1;
             } else if (s[i] == '('){
                 i++;
-                int value = parse(s,n,i);
+                int value = parse(s,i);
                 ans += sign * value;
                 sign = 1;
-            } else if (s[i] == ')'){
+            } else { // s[i] == ')'
                 i++;
                 return ans;
             }
@@ -34,7 +35,6 @@ public:
     }
     int calculate(string s) {
         int i = 0;
-        int n = (int)s.size();
-        return parse(s,n,i);
+        return parse(s,i);
     }
 };
