@@ -2,7 +2,8 @@ class Solution:
     def calculate(self, s: str) -> int:
         i = 0
         n = len(s)
-        def parse(s,n,i):
+        def parse():
+            nonlocal i
             sign = 1
             ans  = 0
             while i < n:
@@ -23,12 +24,11 @@ class Solution:
                     sign = 1
                 elif s[i] == '(':
                     i += 1
-                    value,i = parse(s,n,i)
+                    value = parse()
                     ans += sign * value
                     sign = 1
                 elif s[i] == ')':
                     i += 1
-                    return (ans,i)
-            return (ans,i)
-        ans,_ = parse(s,n,i)
-        return ans
+                    return ans
+            return ans
+        return parse()
