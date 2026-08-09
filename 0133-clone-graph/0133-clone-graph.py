@@ -16,9 +16,9 @@ class Solution:
         q.append(node)
         while len(q) != 0:
             cur = q.popleft()
-            for neighbor in cur.neighbors:
-                if not neighbor in mp:
-                    mp[neighbor] = Node(neighbor.val)
-                    q.append(neighbor)
-                mp[cur].neighbors.append(mp[neighbor])
+            for nb in cur.neighbors:
+                if not nb in mp:
+                    mp[nb] = Node(nb.val)
+                    q.append(nb)
+                mp[cur].neighbors.append(mp[nb])
         return mp[node]
