@@ -3,19 +3,19 @@ public:
     int orangesRotting(vector<vector<int>>& grid) {
         int m = (int)grid.size();
         int n = (int)grid[0].size();
-        int dr[4] = {-1,0,1,0};
-        int dc[4] = {0,1,0,-1};
-        queue<pair<int,int>> q;
-        int minutes = 0;
         int fresh = 0;
+        queue<pair<int,int>> q;
         for (int r=0; r<m; r++){
             for (int c=0; c<n; c++){
-                if (grid[r][c] == 2)
-                    q.push({r,c});
-                else if (grid[r][c] == 1)
+                if (grid[r][c] == 1)
                     fresh++;
+                else if (grid[r][c] == 2)
+                    q.push({r,c});
             }
         }
+        int minutes = 0;
+        int dr[4] = {0,-1,0,1};
+        int dc[4] = {-1,0,1,0};
         while (!q.empty()){
             int sz = (int)q.size();
             bool madeRotten = false;
