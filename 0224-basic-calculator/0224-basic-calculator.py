@@ -1,11 +1,11 @@
 class Solution:
     def calculate(self, s: str) -> int:
-        i = 0
         n = len(s)
+        i = 0
         def parse():
             nonlocal i
-            sign = 1
             ans  = 0
+            sign = 1
             while i < n:
                 if s[i] == ' ':
                     i += 1
@@ -18,7 +18,7 @@ class Solution:
                 elif s[i].isdigit():
                     num = 0
                     while i < n and s[i].isdigit():
-                        num = num * 10 + int(s[i])
+                        num = num * 10 + (ord(s[i])-ord('0'))
                         i += 1
                     ans += sign * num
                     sign = 1
@@ -27,7 +27,7 @@ class Solution:
                     value = parse()
                     ans += sign * value
                     sign = 1
-                elif s[i] == ')':
+                else: # s[i] == ')'
                     i += 1
                     return ans
             return ans
