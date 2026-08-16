@@ -1,15 +1,15 @@
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         nums = sorted(nums)
-        n = len(nums)
-        ans = []
+        n    = len(nums)
+        ans  = []
         for i in range(n):
             if nums[i] > 0:
-                break 
+                break
             if i > 0 and nums[i] == nums[i-1]:
-                continue 
-            l=i+1
-            r=n-1
+                continue
+            l = i+1
+            r = n-1
             while l < r:
                 s = nums[i]+nums[l]+nums[r]
                 if s == 0:
@@ -22,6 +22,6 @@ class Solution:
                         r -= 1
                 elif s < 0:
                     l += 1
-                else: 
+                else: # s > 0
                     r -= 1
         return ans
